@@ -1,0 +1,103 @@
+header{
+    padding: 26px 5px;
+    .lists{
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                padding: 0 12px;
+                .active{
+                    color: black;
+                }
+                a{
+                    color: rgb(0 0 0 / 50%);
+                    font-weight: 600;
+                    text-decoration: none;
+    
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+        .home-list{
+            display: none;
+            position: relative;
+            left: 100px;
+            font-size: 14px;
+            width: 30%;
+            background-color: white;
+            padding:12px 0 12px 48px;
+            li{
+                display: flex;
+                padding: 7px 0;
+                position: relative;
+                right: 17px;
+                font-weight: 600;
+                color: #868e96;
+               }
+        }
+
+    }
+    .input-basket{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 50px;
+
+        .search{
+            padding: 5px;
+            margin-top: 6px;
+            input{
+                border: none;
+                outline: none;
+            }
+            i{
+                font-size: 18px;
+            }
+            border-bottom: 1px solid lightgray;
+            transition: .4s;
+            &:hover{
+            border-bottom: 1px solid black;
+                
+            }
+        }
+
+        .person-basket{
+            .person{
+                font-size: 26px;
+            }
+            .basket{
+                font-size: 22px;
+            }
+            .menu{
+                font-size: 26px;
+            }
+            i{
+                padding: 0 6px;
+                font-size: 22px;
+                transition: .3s;
+                 
+                &:hover{
+                    color: #bcac76;
+                }
+            }
+            span{
+                position: absolute;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                color: white;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 11px;
+                background-color: #bcac76;
+            }
+            .wishlist{
+                right: 142px;
+            }
+            .baskett{
+                right: 103px;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+header {
+  padding: 26px 5px;
+}
+header .lists ul {
+  display: flex;
+  list-style: none;
+}
+header .lists ul li {
+  padding: 0 12px;
+}
+header .lists ul li .active {
+  color: black;
+}
+header .lists ul li a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  text-decoration: none;
+}
+header .lists ul li a:hover {
+  color: black;
+}
+header .lists .home-list {
+  display: none;
+  position: relative;
+  left: 100px;
+  font-size: 14px;
+  width: 30%;
+  background-color: white;
+  padding: 12px 0 12px 48px;
+}
+header .lists .home-list li {
+  display: flex;
+  padding: 7px 0;
+  position: relative;
+  right: 17px;
+  font-weight: 600;
+  color: #868e96;
+}
+header .input-basket {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+header .input-basket .search {
+  padding: 5px;
+  margin-top: 6px;
+  border-bottom: 1px solid lightgray;
+  transition: 0.4s;
+}
+header .input-basket .search input {
+  border: none;
+  outline: none;
+}
+header .input-basket .search i {
+  font-size: 18px;
+}
+header .input-basket .search:hover {
+  border-bottom: 1px solid black;
+}
+header .input-basket .person-basket .person {
+  font-size: 26px;
+}
+header .input-basket .person-basket .basket {
+  font-size: 22px;
+}
+header .input-basket .person-basket .menu {
+  font-size: 26px;
+}
+header .input-basket .person-basket i {
+  padding: 0 6px;
+  font-size: 22px;
+  transition: 0.3s;
+}
+header .input-basket .person-basket i:hover {
+  color: #bcac76;
+}
+header .input-basket .person-basket span {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 11px;
+  background-color: #bcac76;
+}
+header .input-basket .person-basket .wishlist {
+  right: 142px;
+}
+header .input-basket .person-basket .baskett {
+  right: 103px;
+}/*# sourceMappingURL=header.css.map */

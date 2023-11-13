@@ -1,0 +1,151 @@
+.leke {
+  width: 1000px;
+  position: absolute;
+  top: -450px;
+  left: -450px;
+}
+
+#Slider .carousel ol li {
+  background-color: gray;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+#Slider .carousel ol .active {
+  margin-bottom: 2px;
+  width: 6px;
+  height: 6px;
+  background-color: #bcac76;
+}
+#Slider .carousel .carousel-inner .carousel-item .title-text-button {
+  position: relative;
+  top: 100px;
+  left: 180px;
+}
+#Slider .carousel .carousel-inner .carousel-item .title-text-button .back {
+  width: 550px;
+  position: absolute;
+  top: -100px;
+  left: 660px;
+}
+#Slider .carousel .carousel-inner .carousel-item .title-text-button h3 {
+  font-size: 27px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#Slider .carousel .carousel-inner .carousel-item .title-text-button h1 {
+  font-size: 70px;
+  margin: 19px 0;
+  width: 70%;
+  line-height: 70px;
+}
+#Slider .carousel .carousel-inner .carousel-item .title-text-button p {
+  margin: 19px 0;
+  width: 50%;
+  font-weight: 600;
+  color: gray;
+}
+#Slider .carousel .carousel-inner .carousel-item .title-text-button button {
+  margin-top: 30px;
+  padding: 5px 25px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #bcac76;
+  color: #bcac76;
+}
+#Slider .carousel .carousel-inner .carousel-item .image img {
+  margin-left: 100px;
+  width: 50%;
+}
+
+#Choices {
+  margin-top: 50p;
+}
+#Choices .caption {
+  margin-bottom: 30px;
+}
+#Choices .caption h4 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: gray;
+}
+#Choices .caption h2 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+#Choices .caption p {
+  font-size: 20px;
+  font-weight: 400;
+  width: 60%;
+  color: gray;
+}
+#Choices .image-title {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  transition: 0.4s;
+}
+#Choices .image-title:hover {
+  transform: scale(1.1);
+}
+#Choices .image-title .image img {
+  width: 80%;
+}
+#Choices .image-title .title {
+  margin-left: 18px;
+}
+#Choices .image-title .title h3 {
+  width: 20%;
+  font-weight: bold;
+}
+#Choices .image-title .title p {
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+}
+#Choices .image-title .title button {
+  border: none;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 13.5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+#Choices .title-image {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  transition: 0.4s;
+}
+#Choices .title-image:hover {
+  transform: scale(1.06);
+}
+#Choices .title-image .image {
+  position: relative;
+  right: 60px;
+}
+#Choices .title-image .image img {
+  width: 110%;
+}
+#Choices .title-image .title {
+  z-index: 1;
+  margin-top: 80px;
+  margin-left: 18px;
+}
+#Choices .title-image .title h3 {
+  width: 20%;
+  font-weight: bold;
+}
+#Choices .title-image .title p {
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+}
+#Choices .title-image .title button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 13.5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}/*# sourceMappingURL=index.css.map */
