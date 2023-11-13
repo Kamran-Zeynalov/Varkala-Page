@@ -1,9 +1,10 @@
-.leke{
+.leke {
     width: 1000px;
     position: absolute;
     top: -450px;
     left: -450px;
 }
+
 #Slider {
     .carousel {
         ol {
@@ -21,7 +22,7 @@
                 background-color: #bcac76;
             }
         }
-        
+
         .carousel-inner {
             .carousel-item {
                 .title-text-button {
@@ -29,12 +30,13 @@
                     top: 100px;
                     left: 180px;
 
-                    .back{
+                    .back {
                         width: 550px;
-                        position: absolute; 
+                        position: absolute;
                         top: -100px;
-                        left: 660px;                       
+                        left: 660px;
                     }
+
                     h3 {
                         font-size: 27px;
                         font-weight: 400;
@@ -109,6 +111,7 @@
         margin-top: 50px;
         margin-bottom: 80px;
         transition: .4s;
+
         &:hover {
             transform: scale(1.1);
         }
@@ -186,6 +189,49 @@
                 font-size: 13.5px;
                 font-weight: bold;
                 letter-spacing: 5px;
+            }
+        }
+    }
+}
+
+#DealOfWeak {
+    background-color: #ebf7ff;
+    padding: 50px 0;
+
+    .info-time {
+        .info {
+            h5 {
+                letter-spacing: 7px;
+                font-weight: bold;
+                padding: 20px 0 10px 0;
+                text-transform: uppercase;
+                font-size: 17px;
+                color: #dc3545 !important;
+            }
+
+            h1 {
+                font-weight: bold;
+            }
+
+            p {
+                font-family: monospace;
+                font-weight: 500;
+                color: gray;
+
+                .deleted {
+                    display: inline-block;
+                    margin-right: 18px;
+                    text-decoration: line-through;
+                }
+            }
+            .discount{
+                padding: 10px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 600;
+                display: inline-block;
+                background-color: #dc3545;
+                color: white;
             }
         }
     }
