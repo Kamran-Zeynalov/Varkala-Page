@@ -152,7 +152,20 @@
 
 #DealOfWeak {
   background-color: #ebf7ff;
-  padding: 50px 0;
+  padding: 20px 0;
+  position: relative;
+}
+#DealOfWeak .leke {
+  width: 900px;
+  position: absolute;
+  top: -200px;
+  left: -370px;
+}
+#DealOfWeak .info-time {
+  z-index: -2;
+}
+#DealOfWeak .info-time .info {
+  z-index: 1;
 }
 #DealOfWeak .info-time .info h5 {
   letter-spacing: 7px;
@@ -183,4 +196,265 @@
   display: inline-block;
   background-color: #dc3545;
   color: white;
+}
+#DealOfWeak .info-time .time {
+  padding-bottom: 25 px;
+}
+#DealOfWeak .info-time .time #countdown {
+  margin-top: 10px;
+}
+#DealOfWeak .info-time .time #countdown ul {
+  display: flex;
+  list-style: none;
+  background-color: white;
+  width: 90%;
+  text-align: center;
+  padding: 20px 20px 20px 10px;
+  box-shadow: 1px 1px 20px 0 gray;
+}
+#DealOfWeak .info-time .time #countdown ul li {
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: gray;
+}
+#DealOfWeak .info-time .time #countdown ul li span {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 5px;
+  display: block;
+}
+#DealOfWeak .info-time .time button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 6px 18px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: black;
+  transition: 0.4s;
+}
+#DealOfWeak .info-time .time button:hover {
+  background-color: black;
+  color: white;
+}
+#DealOfWeak .image {
+  margin-left: 20px;
+}
+#DealOfWeak .image img {
+  width: 300px;
+}
+
+#Arrivals {
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+#Arrivals .leke {
+  width: 1000px;
+  position: absolute;
+  top: 230px;
+  left: 900px;
+}
+#Arrivals .caption h2 {
+  font-weight: bold;
+}
+#Arrivals .caption p {
+  font-size: 19px;
+  font-weight: 400;
+  color: gray;
+  width: 90%;
+}
+#Arrivals .filter ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#Arrivals .filter ul .active {
+  color: black;
+}
+#Arrivals .filter ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+  margin: 0;
+  padding: 0 6px;
+  transition: color 0.3s;
+}
+#Arrivals .filter ul li:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+#Arrivals .products {
+  display: flex;
+  justify-content: end;
+  margin-top: 3px;
+}
+#Arrivals .products h5 {
+  color: #bcac76;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  transition: color 0.4s;
+}
+#Arrivals .products h5:hover {
+  color: rgb(150, 130, 64);
+  border-bottom: 1px solid rgb(150, 130, 64);
+}
+#Arrivals .image-title-price {
+  margin-top: 20px;
+  transition: 0.4s;
+}
+#Arrivals .image-title-price .image {
+  position: relative;
+  overflow: hidden;
+}
+#Arrivals .image-title-price .image img {
+  margin: 10px;
+  width: 100%;
+  top: 40px;
+  transition: 0.5s;
+  opacity: 1;
+}
+#Arrivals .image-title-price .image .up {
+  opacity: 0;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#Arrivals .image-title-price .image .cart-detail {
+  transition: 0.3s;
+  opacity: 0;
+  position: relative;
+  padding: 10px 13px 10px 19px;
+  top: -60px;
+  background-color: white;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+#Arrivals .image-title-price .image .cart-detail .cart p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+#Arrivals .image-title-price .image .cart-detail .cart p:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+#Arrivals .image-title-price .image .cart-detail .detail i {
+  padding: 0 5px;
+  transition: 0.4s;
+}
+#Arrivals .image-title-price .image .cart-detail .detail i:hover {
+  cursor: pointer;
+  color: #bcac76;
+}
+#Arrivals .image-title-price .title {
+  transition: 0.3s;
+  position: relative;
+  left: 11px;
+  top: -70px;
+}
+#Arrivals .image-title-price .title h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+#Arrivals .image-title-price .title .info {
+  display: flex;
+  justify-content: space-between;
+}
+#Arrivals .image-title-price .title .info .price {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 15px;
+  color: gray;
+}
+#Arrivals .image-title-price .title .info .stars {
+  transition: 0.3s;
+  padding-right: 15px;
+  opacity: 0;
+  margin-top: 10px;
+}
+#Arrivals .image-title-price .title .info .stars i {
+  font-size: 12px;
+  padding: 0;
+  color: #bcac76;
+}
+#Arrivals .image-title-price .title .info .stars .gray {
+  color: #868e96;
+}
+#Arrivals .image-title-price:hover .image img {
+  opacity: 0;
+}
+#Arrivals .image-title-price:hover .image .up {
+  opacity: 1;
+}
+#Arrivals .image-title-price:hover .cart-detail {
+  opacity: 1;
+  margin-top: 0;
+}
+#Arrivals .image-title-price:hover .title {
+  top: -60px;
+}
+#Arrivals .image-title-price:hover .title .info .stars {
+  opacity: 1;
+  margin-top: 0;
+}
+
+#Summer {
+  position: relative;
+}
+#Summer .leke {
+  width: 600px;
+  position: absolute;
+  top: -150px;
+  left: -330px;
+}
+#Summer .summer-discount {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 440px;
+  background-color: #eae0bd;
+}
+#Summer .summer-discount h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+#Summer .summer-discount h5 {
+  padding: 15px 0;
+  font-size: 35px;
+  font-weight: 400;
+}
+#Summer .summer-discount button {
+  margin-top: 25px;
+  font-weight: 600;
+  background-color: transparent;
+  letter-spacing: 6px;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: 0.4s;
+}
+#Summer .summer-discount button:hover {
+  background-color: black;
+  color: white;
+}
+#Summer .image {
+  position: absolute;
+  width: 249px;
+  top: -50px;
+  right: 180px;
+}
+#Summer .image img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

@@ -78,7 +78,6 @@
     }
 }
 
-
 #Choices {
     margin-top: 50p;
 
@@ -196,10 +195,22 @@
 
 #DealOfWeak {
     background-color: #ebf7ff;
-    padding: 50px 0;
+    padding: 20px 0;
+    position: relative;
+
+    .leke {
+        width: 900px;
+        position: absolute;
+        top: -200px;
+        left: -370px;
+    }
 
     .info-time {
+        z-index: -2;
+
         .info {
+            z-index: 1;
+
             h5 {
                 letter-spacing: 7px;
                 font-weight: bold;
@@ -224,7 +235,8 @@
                     text-decoration: line-through;
                 }
             }
-            .discount{
+
+            .discount {
                 padding: 10px;
                 border-radius: 8px;
                 font-size: 14px;
@@ -234,5 +246,332 @@
                 color: white;
             }
         }
+
+        .time {
+            #countdown {
+                margin-top: 10px;
+
+                ul {
+                    display: flex;
+                    list-style: none;
+                    background-color: white;
+                    width: 90%;
+                    text-align: center;
+                    padding: 20px 20px 20px 10px;
+                    box-shadow: 1px 1px 20px 0 gray;
+
+                    li {
+                        margin: 0 auto;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: gray;
+
+                        span {
+                            color: black;
+                            font-weight: bold;
+                            font-size: 22px;
+                            margin-bottom: 5px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            button {
+                background-color: transparent;
+                border: 1px solid black;
+                padding: 6px 18px;
+                margin-top: 10px;
+                font-size: 13px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+                color: black;
+                transition: .4s;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+
+            }
+
+            padding-bottom: 25 px;
+        }
+    }
+
+    .image {
+        margin-left: 20px;
+
+        img {
+            width: 300px;
+        }
     }
 }
+
+#Arrivals {
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+
+    .leke {
+        width: 1000px;
+        position: absolute;
+        top: 230px;
+        left: 900px;
+    }
+
+    .caption {
+        h2 {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 19px;
+            font-weight: 400;
+            color: gray;
+            width: 90%;
+        }
+    }
+
+    .filter {
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .active {
+                color: black;
+            }
+
+            li {
+                font-size: 16px;
+                font-weight: 500;
+                color: gray;
+                margin: 0;
+                padding: 0 6px;
+                transition: color .3s;
+
+                &:hover {
+                    color: black;
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+    }
+
+    .products {
+        display: flex;
+        justify-content: end;
+        margin-top: 3px;
+
+        h5 {
+            color: #bcac76;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: bold;
+            transition: color .4s;
+
+            &:hover {
+                color: rgb(150, 130, 64);
+                border-bottom: 1px solid rgb(150, 130, 64);
+            }
+        }
+    }
+
+    .image-title-price {
+        margin-top: 20px;
+        transition: .4s;
+
+        .image {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                margin: 10px;
+                width: 100%;
+
+                top: 40px;
+                transition: .5s;
+                opacity: 1;
+
+            }
+
+            .up {
+                opacity: 0;
+                transition: .5s;
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+
+            .cart-detail {
+                transition: .3s;
+                opacity: 0;
+                position: relative;
+                padding: 10px 13px 10px 19px;
+                top: -60px;
+                background-color: white;
+                display: flex;
+                margin-top: 10px;
+                justify-content: space-between;
+
+                .cart {
+                    p {
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin-top: 5px;
+
+                        &:hover {
+                            cursor: pointer;
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+
+                .detail {
+                    i {
+                        padding: 0 5px;
+                        transition: .4s;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: #bcac76;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .title {
+            transition: .3s;
+            position: relative;
+            left: 11px;
+            top: -70px;
+
+            h6 {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+
+                .price {
+                    font-family: monospace;
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: gray;
+                }
+
+                .stars {
+                    transition: .3s;
+                    padding-right: 15px;
+                    opacity: 0;
+                    margin-top: 10px;
+
+                    i {
+                        font-size: 12px;
+                        padding: 0;
+                        color: #bcac76;
+                    }
+
+                    .gray {
+                        color: #868e96;
+                    }
+                }
+            }
+        }
+
+
+        &:hover {
+            .image {
+                img {
+                    opacity: 0;
+                }
+
+                .up {
+                    opacity: 1;
+                }
+            }
+
+            .cart-detail {
+                opacity: 1;
+                margin-top: 0;
+            }
+
+            .title {
+                top: -60px;
+
+                .info {
+                    .stars {
+                        opacity: 1;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Summer {
+    position: relative;
+
+    .leke {
+        width: 600px;
+        position: absolute;
+        top: -150px;
+        left: -330px;
+    }
+
+    .summer-discount {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 440px;
+        background-color: #eae0bd;
+
+        h1 {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        h5 {
+            padding: 15px 0;
+            font-size: 35px;
+            font-weight: 400;
+        }
+
+        button {
+            margin-top: 25px;
+            font-weight: 600;
+            background-color: transparent;
+            letter-spacing: 6px;
+            font-size: 18px;
+            padding: 10px 20px;
+            transition: .4s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+    .image{
+        position: absolute;
+        width: 249px;
+        top: -50px;
+        right: 180px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
