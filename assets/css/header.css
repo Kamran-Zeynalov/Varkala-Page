@@ -1,5 +1,80 @@
-header {
-  padding: 26px 5px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .header {
+  width: 100%;
+  height: 56px;
+  font-size: 0.875rem;
+  color: #343a40;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 30px;
+  position: relative;
+  z-index: 2;
+}
+header .right {
+  padding-right: 25px;
+}
+header .social-media {
+  margin-left: 15px;
+}
+header .social-media i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+header .social-media span {
+  font-size: 15px;
+  font-family: monospace;
+}
+header .fa-brands:hover {
+  cursor: pointer;
+  color: #bcac76;
+}
+header .fa-phone {
+  margin-left: 15px;
+}
+header .fa-solid {
+  font-size: 12px;
+  font-weight: bolder;
+}
+header .dropbtn {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #343a40;
+}
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  min-width: 150px;
+  overflow: auto;
+  z-index: 1;
+}
+header .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header input::-moz-placeholder {
+  color: #b6bdc4;
+}
+header input::placeholder {
+  color: #b6bdc4;
+}
+header .lists {
+  margin-top: 30px;
 }
 header .lists ul {
   display: flex;
@@ -39,7 +114,7 @@ header .lists .home-list li {
 header .input-basket {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px;
+  margin: 30px 50px 0 50px;
 }
 header .input-basket .search {
   padding: 5px;
@@ -50,6 +125,7 @@ header .input-basket .search {
 header .input-basket .search input {
   border: none;
   outline: none;
+  background-color: transparent;
 }
 header .input-basket .search i {
   font-size: 18px;

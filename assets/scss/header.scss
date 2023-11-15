@@ -1,87 +1,187 @@
-header{
-    padding: 26px 5px;
-    .lists{
-        ul{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    .header {
+        width: 100%;
+        height: 56px;
+        font-size: .875rem;
+        color: #343a40;
+        background-color: #e9ecef;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .right {
+        padding-right: 25px;
+    }
+
+    .social-media {
+        margin-left: 15px;
+
+        i {
+            font-size: 14px;
+            margin-right: 5px;
+        }
+
+        span {
+            font-size: 15px;
+            font-family: monospace;
+        }
+    }
+
+    .fa-brands:hover {
+        cursor: pointer;
+        color: #bcac76;
+    }
+
+    .fa-phone {
+        margin-left: 15px;
+    }
+
+    .fa-solid {
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    .dropbtn {
+        border: none;
+        background-color: transparent;
+        padding: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        color: #343a40;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        color: black;
+        min-width: 150px;
+        overflow: auto;
+        z-index: 1;
+
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+    }
+
+    input::placeholder {
+        color: #b6bdc4;
+    }
+
+    .lists {
+        margin-top: 30px; 
+        ul {
             display: flex;
             list-style: none;
-            li{
+
+            li {
                 padding: 0 12px;
-                .active{
+
+                .active {
                     color: black;
                 }
-                a{
+
+                a {
                     color: rgb(0 0 0 / 50%);
                     font-weight: 600;
                     text-decoration: none;
-    
-                    &:hover{
+
+                    &:hover {
                         color: black;
                     }
                 }
             }
         }
-        .home-list{
+
+        .home-list {
             display: none;
             position: relative;
             left: 100px;
             font-size: 14px;
             width: 30%;
             background-color: white;
-            padding:12px 0 12px 48px;
-            li{
+            padding: 12px 0 12px 48px;
+
+            li {
                 display: flex;
                 padding: 7px 0;
                 position: relative;
                 right: 17px;
                 font-weight: 600;
                 color: #868e96;
-               }
+            }
         }
 
     }
-    .input-basket{
+
+    .input-basket {
         display: flex;
         justify-content: space-between;
-        margin: 0 50px;
+        margin:30px 50px 0 50px;
+        
 
-        .search{
+        .search {
             padding: 5px;
             margin-top: 6px;
-            input{
+            
+            input {
                 border: none;
                 outline: none;
+                background-color: transparent;
             }
-            i{
+
+            i {
                 font-size: 18px;
             }
+
             border-bottom: 1px solid lightgray;
             transition: .4s;
-            &:hover{
-            border-bottom: 1px solid black;
-                
+
+            &:hover {
+                border-bottom: 1px solid black;
+
             }
         }
 
-        .person-basket{
-            .person{
+        .person-basket {
+            .person {
                 font-size: 26px;
             }
-            .basket{
+
+            .basket {
                 font-size: 22px;
             }
-            .menu{
+
+            .menu {
                 font-size: 26px;
             }
-            i{
+
+            i {
                 padding: 0 6px;
                 font-size: 22px;
                 transition: .3s;
-                 
-                &:hover{
+
+                &:hover {
                     color: #bcac76;
                 }
             }
-            span{
+
+            span {
                 position: absolute;
                 display: inline-block;
                 width: 20px;
@@ -92,10 +192,12 @@ header{
                 font-size: 11px;
                 background-color: #bcac76;
             }
-            .wishlist{
+
+            .wishlist {
                 right: 142px;
             }
-            .baskett{
+
+            .baskett {
                 right: 103px;
             }
         }
