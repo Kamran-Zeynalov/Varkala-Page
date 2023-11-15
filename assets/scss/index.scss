@@ -6,6 +6,7 @@
 }
 
 #Slider {
+    margin-top: 120px;
     .carousel {
         ol {
             li {
@@ -85,10 +86,11 @@
         margin-bottom: 30px;
 
         h4 {
-            font-size: 18px;
+            font-size: 16px;
             letter-spacing: 2px;
             text-transform: uppercase;
             color: gray;
+            font-weight: 600;
         }
 
         h2 {

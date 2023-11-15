@@ -84,7 +84,8 @@ header {
     }
 
     .lists {
-        margin-top: 30px; 
+        margin-top: 30px;
+
         ul {
             display: flex;
             list-style: none;
@@ -132,13 +133,13 @@ header {
     .input-basket {
         display: flex;
         justify-content: space-between;
-        margin:30px 50px 0 50px;
-        
+        margin: 30px 50px 0 50px;
+
 
         .search {
             padding: 5px;
             margin-top: 6px;
-            
+
             input {
                 border: none;
                 outline: none;
@@ -199,6 +200,91 @@ header {
 
             .baskett {
                 right: 103px;
+            }
+        }
+    }
+}
+
+#dropDown {
+    position: absolute;
+    z-index: 20000;
+    display: none;
+
+    .title {
+        color: black;
+        font-weight: 600;
+    }
+
+    p {
+        font-weight: 500;
+        color: gray;
+        font-size: 14px;
+        line-height: 14px;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 12px;
+            font-size: 11px;
+            padding: 4px 12px;
+            border-radius: 10px;
+            background-color: #f7f5ef;
+            color: #bcac76;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+
+    .homeDrop {
+        display: none;
+        box-shadow: 1px 2px 10px 2px lightgray;
+        position: relative;
+        top: 80px;
+        left: 140px;
+        background-color: white;
+        padding: 20px 20px;
+        transition: all .4s;
+
+    }
+
+    .shopDown {
+        position: relative;
+        top: 80px;
+        left: 220px;
+        background-color: white;
+
+        .parent {
+            display: flex;
+
+            .pages {
+                padding: 55px 30px 0 30px;
+            }
+
+            .proPages {
+                padding: 55px 30px 0 30px;
+            }
+
+            .image {
+                height: 300px;
+                overflow: hidden;
+
+                img {
+                    margin: 0;
+                    padding: 0;
+                    height: 100%;
+                }
             }
         }
     }

@@ -166,4 +166,75 @@ header .input-basket .person-basket .wishlist {
 }
 header .input-basket .person-basket .baskett {
   right: 103px;
+}
+
+#dropDown {
+  position: absolute;
+  z-index: 20000;
+  display: none;
+}
+#dropDown .title {
+  color: black;
+  font-weight: 600;
+}
+#dropDown p {
+  font-weight: 500;
+  color: gray;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+}
+#dropDown p:hover {
+  color: black;
+}
+#dropDown p span {
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 11px;
+  padding: 4px 12px;
+  border-radius: 10px;
+  background-color: #f7f5ef;
+  color: #bcac76;
+  font-weight: 700;
+}
+#dropDown p a {
+  text-decoration: none;
+  color: gray;
+}
+#dropDown p a:hover {
+  color: black;
+}
+#dropDown .homeDrop {
+  display: none;
+  box-shadow: 1px 2px 10px 2px lightgray;
+  position: relative;
+  top: 80px;
+  left: 140px;
+  background-color: white;
+  padding: 20px 20px;
+  transition: all 0.4s;
+}
+#dropDown .shopDown {
+  position: relative;
+  top: 80px;
+  left: 220px;
+  background-color: white;
+}
+#dropDown .shopDown .parent {
+  display: flex;
+}
+#dropDown .shopDown .parent .pages {
+  padding: 55px 30px 0 30px;
+}
+#dropDown .shopDown .parent .proPages {
+  padding: 55px 30px 0 30px;
+}
+#dropDown .shopDown .parent .image {
+  height: 300px;
+  overflow: hidden;
+}
+#dropDown .shopDown .parent .image img {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }/*# sourceMappingURL=header.css.map */
