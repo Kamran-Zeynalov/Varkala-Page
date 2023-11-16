@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -55,13 +56,13 @@
                     <div class="lists">
                         <ul>
                             <li><a class="active" href="./index.html">Varkala</a></li>
-                            <li><a class="active" href="./index.html">
-                                    Home <i class="fa-solid fa-angle-down"></i></a>
+                            <li class="myList active">
+                                    Home <i class="fa-solid fa-angle-down"></i>
                             </li>
-                            <li><a href="./index.html">Shop <i class="fa-solid fa-angle-down"></i></a></li>
-                            <li><a href="./index.html">Icons <i class="fa-solid fa-angle-down"></i></a></li>
-                            <li><a href="./index.html">Pages <i class="fa-solid fa-angle-down"></i></a></li>
-                            <li><a href="./index.html">Docs <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li class="myList">Shop <i class="fa-solid fa-angle-down"></i></li>
+                            <li class="myList">Icons <i class="fa-solid fa-angle-down"></i></li>
+                            <li class="myList">Pages <i class="fa-solid fa-angle-down"></i></li>
+                            <li class="myList">Docs <i class="fa-solid fa-angle-down"></i></li>
                         </ul>
                         <ul class="home-list">
                             <li>Home 1 - Fashion</li>
@@ -89,15 +90,19 @@
         </div>
     </header>
 
+    <section id="SideBasket">
+
+    </section>
+
     <section id="dropDown">
-        <div class="homeDrop">
+        <div id="homeDrop" class="homeDrop animate__animated">
             <p>Home 1 - Fashion</p>
             <p>Home 2 - Fashion</p>
             <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
             <p>Home 4 - Design <span> New</span></p>
         </div>
 
-        <div class="shopDown ">
+        <div id="shopDown" class="shopDown animate__animated animate__fadeInUp">
             <div class="parent">
                 <div class="pages">
                     <p class="title">Shop pages</p>
@@ -116,11 +121,190 @@
                     <p>Product standard</p>
                 </div>
                 <div class="image">
-
                     <img src="./assets/images/kyle-loftus-596319-unsplash-cropped.jpg" alt="Person">
                 </div>
             </div>
         </div>
+
+        <div id="iconsDown" class="iconsDown animate__animated animate__fadeInUp w-50 m-0 p-0 pt-3">
+            <div class="container-fluid m-0 p-0">
+                <div class="row p-0 m-0">
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-name">
+                            <p><i class="bi bi-person-standing-dress"></i></p>
+                            <p class="dress">Trousers</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 bottomText mt-4">
+                        <p>Don't miss our biggest sales this year. Use the code "SUMMER35" at checkout until Jun. 15!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pagesDown" class="pagesDown animate__animated animate__fadeInUp">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="image-info">
+                            <div class="image">
+                                <img src="./assets/images/christopher-campbell-28571-unsplash.jpg" alt="">
+                            </div>
+                            <div class="info-1">
+                                <h4>Homepage</h4>
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p>Home 3 - Design <span>New</span></p>
+                                <p>Home 4 - Design <span>New</span></p>
+                            </div>
+                            <div class="info-1">
+                                <h4>Homepage</h4>
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p>Home 3 - Design <span>New</span></p>
+                                <p>Home 4 - Design <span>New</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="image-info">
+                            <div class="image">
+                                <img src="./assets/images/ian-dooley-347962-unsplash.jpg" alt="">
+                            </div>
+                            <div class="info-1">
+                                <h4>Homepage</h4>
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p>Home 3 - Design <span>New</span></p>
+                                <p>Home 4 - Design <span>New</span></p>
+                            </div>
+                            <div class="info-1">
+                                <h4>Homepage</h4>
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p>Home 3 - Design <span>New</span></p>
+                                <p>Home 4 - Design <span>New</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="image-info">
+                            <div class="image">
+                                <img src="./assets/images/ian-dooley-347942-unsplash.jpg" alt="">
+                            </div>
+                            <div class="info-1">
+                                <h4>Homepage</h4>
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p>Home 3 - Design <span>New</span></p>
+                                <p>Home 4 - Design <span>New</span></p>
+                            </div>
+                            <div class="info-1">
+                                <h4>Homepage</h4>
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p>Home 3 - Design <span>New</span></p>
+                                <p>Home 4 - Design <span>New</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="image-info">
+                            <div class="image">
+                                <img src="./assets/images/photo-1534126511673-b6899657816a.jpg" alt="">
+                            </div>
+                            <div class="info-1">
+                                <h4>Homepage</h4>
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p>Home 3 - Design <span>New</span></p>
+                                <p>Home 4 - Design <span>New</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="docsDrop" class="docsDrop animate__animated animate__fadeInUp">
+            <p>Introduction</p>
+            <p>Directory structure</p>
+            <p>Gulp</p>
+            <p>Customizing CSS</p>
+            <p>Credits</p>
+            <p style="border-bottom: 1px solid lightgray;padding-bottom: 20px;">Changelog</p>
+            <p>Bootstrap</p>
+            <p>Theme</p>
+        </div>
+
     </section>
 
     <section id="Slider">
@@ -806,6 +990,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
