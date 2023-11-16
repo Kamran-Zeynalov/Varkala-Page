@@ -1,22 +1,40 @@
 var myListElements = document.querySelectorAll(".myList");
-var homeDrop = document.getElementById("homeDrop");
-var homeDrop = document.getElementById("pagesDown");
-var homeDrop = document.getElementById("dgdfg");
-var homeDrop = document.getElementById("homeDrop");
-var homeDrop = document.getElementById("homeDrop");
+var dropElements = [
+  document.getElementById("homeDrop"),
+  document.getElementById("shopDown"),
+  document.getElementById("iconsDown"),
+  document.getElementById("pagesDown"),
+  document.getElementById("docsDrop")
+];
 
-function handleClick(event) {
-  if (window.getComputedStyle(homeDrop).display === "none") {
-    homeDrop.classList.add("animate__fadeInUp");
-    homeDrop.classList.remove("animate__fadeOutDown");
-    homeDrop.style.display = "inline-block";
-  } else {
-    homeDrop.classList.add("animate__fadeOutDown");
-    homeDrop.classList.remove("animate__fadeInUp");
-    setTimeout(function () {
-      homeDrop.style.display = "none";
-    }, 400);
-  }
+function handleClick(index) {
+  return function () {
+    dropElements.forEach((drop, i) => {
+      if (i === index) {
+        if (window.getComputedStyle(drop).display === "none") {
+          drop.classList.add("animate__fadeInUp");
+          drop.classList.remove("animate__fadeOutDown");
+          drop.style.display = "inline-block";
+        } else {
+          drop.classList.add("animate__fadeOutDown");
+          drop.classList.remove("animate__fadeInUp");
+          setTimeout(() => {
+            drop.style.display = "none";
+          }, 400);
+        }
+      } else {
+        drop.classList.add("animate__fadeOutDown");
+        drop.classList.remove("animate__fadeInUp");
+        setTimeout(() => {
+          drop.style.display = "none";
+        }, 400);
+      }
+    });
+  };
 }
-myListElements[0].removeEventListener("click", handleClick);
-myListElements[0].addEventListener("click", handleClick);
+
+myListElements.forEach((element, index) => {
+  element.removeEventListener("click", handleClick(index));
+  element.addEventListener("click", handleClick(index));
+});
+

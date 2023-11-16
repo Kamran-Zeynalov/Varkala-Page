@@ -251,12 +251,11 @@ header {
 
     #homeDrop{
          display: none;
-
     }
     .homeDrop {      
         animation-duration: .5s;
         box-shadow: 1px 2px 10px 2px lightgray;
-        position: relative;
+        position: absolute;
         top: 80px;
         left: 140px;
         background-color: white;
@@ -264,9 +263,12 @@ header {
         transition: all .4s;
     }
 
-    .shopDown {
+    #shopDown{
         display: none;
-        position: relative;
+   }
+    .shopDown {
+        animation-duration: .5s;
+        position: absolute;
         top: 80px;
         left: 220px;
         background-color: white;
@@ -295,10 +297,13 @@ header {
         }
     }
 
-    .iconsDown{
+    #iconsDown{
         display: none;
+   }
+    .iconsDown{
+        animation-duration: .5s;
         box-shadow: 1px 2px 10px 2px lightgray;
-        position: relative;
+        position: absolute;
         top: 80px;
         left: 300px;
         padding: 20px 20px 0 20px;
@@ -341,10 +346,14 @@ header {
         }
     }
 
-    .pagesDown{
+    #pagesDown{
         display: none;
+   }
+    .pagesDown{
+        z-index: 300000000;
+        animation-duration: .5s;
         box-shadow: 1px 2px 10px 2px lightgray;
-        position: relative;
+        position: absolute;
         top: 80px;
         left: 140px;
         padding: 20px 20px 0 20px;
@@ -366,11 +375,14 @@ header {
         }
     }
 
+    #docsDrop{
+        display: none;
+   }
     .docsDrop{
-        display:none;
+        animation-duration: .5s;
         width: 15%;
         box-shadow: 1px 2px 10px 2px lightgray;
-        position: relative;
+        position: absolute;
         top: 80px;
         left: 460px;
         background-color: white;
