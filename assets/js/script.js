@@ -32,7 +32,6 @@ function handleClick(index) {
     });
   };
 }
-
 myListElements.forEach((element, index) => {
   element.removeEventListener("click", handleClick(index));
   element.addEventListener("click", handleClick(index));

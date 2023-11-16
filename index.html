@@ -57,7 +57,7 @@
                         <ul>
                             <li><a class="active" href="./index.html">Varkala</a></li>
                             <li class="myList active">
-                                    Home <i class="fa-solid fa-angle-down"></i>
+                                Home <i class="fa-solid fa-angle-down"></i>
                             </li>
                             <li class="myList">Shop <i class="fa-solid fa-angle-down"></i></li>
                             <li class="myList">Icons <i class="fa-solid fa-angle-down"></i></li>
@@ -78,11 +78,12 @@
                             <input type="text" name="search" id="search" placeholder="Search">
                             <i class="bi bi-search"></i>
                         </div>
-                        <div class="person-basket">
+                        <div class="myList person-basket">
                             <i class="person bi bi-person"></i>
                             <i class="bi bi-heart"></i> <span class="wishlist">3</span>
-                            <i class="basket bi bi-basket"></i> <span class="baskett">3</span>
-                            <i class="menu bi bi-list"></i>
+                            <i class="myList bi bi-basket" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"></i> <span class="baskett">3</span>
+                            <i class="myList bi bi-list"></i>
                         </div>
                     </div>
                 </div>
@@ -90,9 +91,55 @@
         </div>
     </header>
 
-    <section id="SideBasket">
 
-    </section>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <section id="SideBasket">
+            <div class="modal-dialog m-0 p-0">
+                <div class="modal-content parent">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="products">
+                            <div class="image">
+                                <img src="./assets/images/product-square-ian-dooley-347968-unsplash.jpg" alt="">
+                            </div>
+                            <div class="name-price">
+                                <p class="name">Skull Tee</p>
+                                <p class="quantity">Quantity: <span class="baseCount">1</span></p>
+                                <p class="name" style="font-family: monospace;">&75.00</p>
+                            </div>
+                            <div class="xBtn btn-close"></div>
+                        </div>
+                        <div class="products">
+                            <div class="image">
+                                <img src="./assets/images/product-square-ian-dooley-347968-unsplash.jpg" alt="">
+                            </div>
+                            <div class="name-price">
+                                <p class="name">Skull Tee</p>
+                                <p class="quantity">Quantity: <span class="baseCount">1</span></p>
+                                <p class="name" style="font-family: monospace;">&75.00</p>
+                            </div>
+                            <div class="xBtn btn-close"></div>
+                        </div>
+                      
+                    </div>
+                    <div class="modal-footer">
+                        <div class="subTotal">
+                            <p>Subtotal:</p>
+                            <p class="total">$180.00</p>
+                        </div>
+                        <button class="view">View Cart</button>
+                        <button>Checkout</button>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
     <section id="dropDown">
         <div id="homeDrop" class="homeDrop animate__animated">

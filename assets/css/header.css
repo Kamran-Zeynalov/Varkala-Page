@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  margin-right: 10px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -336,4 +351,121 @@ header .input-basket .person-basket .baskett {
 #dropDown .docsDrop p {
   padding: 5px 20px;
   font-weight: 500;
+}
+
+#staticBackdrop {
+  width: 100%;
+}
+#staticBackdrop #SideBasket {
+  display: flex;
+  justify-content: end;
+}
+#staticBackdrop #SideBasket .modal-dialog {
+  width: 100%;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent {
+  border-radius: 0;
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-header {
+  border-bottom: none;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-header button {
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: 0.2s;
+  font-weight: 200;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-header button:hover {
+  transform: rotate(90deg);
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body {
+  height: 700px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body::-webkit-scrollbar {
+  margin-right: 10px;
+  width: 5px;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body .products {
+  display: flex;
+  padding: 26px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid lightgray;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body .products .image {
+  margin-left: 25px;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body .products .image img {
+  width: 100px;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body .products .name-price {
+  margin: 5px 15px;
+  padding: 0;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body .products .name-price .name {
+  font-weight: bolder;
+  font-size: 17px;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body .products .name-price .quantity {
+  color: gray;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body .products .name-price p {
+  font-size: 14px;
+  margin: 5px;
+  padding: 0;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-body .products .xBtn {
+  font-size: 11px;
+  position: relative;
+  top: 8px;
+  left: 150px;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-footer {
+  justify-content: center;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-footer .subTotal {
+  margin: 0 33px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-footer .subTotal p {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-footer button {
+  margin: 6px 0 10px 0;
+  width: 86.5%;
+  padding: 7px 0px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  transition: 0.5s;
+  font-weight: 550;
+  letter-spacing: 2px;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-footer .view {
+  background-color: white;
+  color: black;
+}
+#staticBackdrop #SideBasket .modal-dialog .parent .modal-footer .view:hover {
+  color: white;
+  background-color: black;
 }/*# sourceMappingURL=header.css.map */

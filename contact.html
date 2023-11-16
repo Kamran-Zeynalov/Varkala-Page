@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 776px;
+      width: auto;
+    }
+
+    .leaflet-div-icon {
+      background: black;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="left">
+        <div class="social-media">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-phone"></i>
+          <span>020-800-456-747</span>
+        </div>
+      </div>
+      <div><span>Free in-store delivery</span></div>
+      <div class="right ml-3">
+        <button class="dropbtn" onclick="toggleDropdown('englishDropdown')">English <i class="fa-solid fa-angle-down"
+            id="englishIcon"></i></button>
+        <div class="dropdown-content" id="englishDropdown">
+          <a href="#">German</a>
+          <a href="#">French</a>
+        </div>
+        <button class="dropbtn" onclick="toggleDropdown('usdDropdown')">USD <i class="fa-solid fa-angle-down"
+            id="usdIcon"></i></button>
+        <div class="dropdown-content" id="usdDropdown">
+          <a href="#">EUR</a>
+          <a href="#">GBR</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-7 col-4">
+          <div class="lists">
+            <ul>
+              <li><a class="active" href="./index.html">Varkala</a></li>
+              <li><a href="./index.html">
+                  Home <i class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li><a href="./index.html">Shop <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="./index.html">Icons <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="./index.html">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="./index.html">Docs <i class="fa-solid fa-angle-down"></i></a></li>
+            </ul>
+            <ul class="home-list">
+              <li>Home 1 - Fashion</li>
+              <li>Home 2 - Fashion</li>
+              <li>Home 3 - Design <span> New</span></li>
+              <li>Home 4 - Design <span> New</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5 col-4">
+          <div class="input-basket">
+            <div class="search">
+              <input type="text" name="search" id="search" placeholder="Search">
+              <i class="bi bi-search"></i>
+            </div>
+            <div class="person-basket">
+              <i class="person bi bi-person"></i>
+              <i class="bi bi-heart"></i> <span class="wishlist">3</span>
+              <i class="basket bi bi-basket"></i> <span class="basket-size">3</span>
+              <i id="menuIcon" class="menu bi bi-list"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section id="Hero">
+
+    <div class="circle"></div>
+    <img class="paralax" src="./contact-assets/images/HM-services-removebg-preview.png" alt="Blog">
+
+    <div class="container">
+      <p><span class="gold">Home</span> <span class="stick"> </span> <span>Contact</span></p>
+      <div class="content">
+        <h1>Contact</h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="Contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Address</h4>
+          <p>13/25 New Avenue<br>New Heaven, 45Y 73J<br>England, <strong>Great Britain</strong></p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Call center</h4>
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><strong>+33 555 444 333</strong></p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Electronic support</h4>
+          <p>Please feel free to write an email to us or to use our electronic ticketing system.</p>
+          <ul>
+            <li>info@varkala.com</li>
+            <li>support@varkala.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Stores">
+    <div class="row">
+      <div class="col-lg-6 pr-0">
+        <div id="map"></div>
+      </div>
+      <div class="col-lg-6 location">
+        <h2>Our stores</h2>
+        <div class="row-lg-3">
+          <div class="col-lg-3 pr-0">
+            <h4>New York</h4>
+          </div>
+          <div class="col-lg-3">13/25 New Avenue, New Heaven, 45Y 73J</div>
+          <div class="col-lg-3">564546 54566 54</div>
+          <div class="col-lg-3">email@email.com</div>
+        </div>
+        <div class="row-lg-3">
+          <div class="col-lg-3">
+            <h4>London</h4>
+          </div>
+          <div class="col-lg-3">13/25 New Avenue, New Heaven, 45Y 73J</div>
+          <div class="col-lg-3">564546 54566 54</div>
+          <div class="col-lg-3">email@email.com</div>
+        </div>
+        <div class="row-lg-3">
+          <div class="col-lg-3">
+            <h4>Paris</h4>
+          </div>
+          <div class="col-lg-3">13/25 New Avenue, New Heaven, 45Y 73J</div>
+          <div class="col-lg-3">564546 54566 54</div>
+          <div class="col-lg-3">email@email.com</div>
+        </div>
+        <div class="row-lg-3">
+          <div class="col-lg-3">
+            <h4>Tokyo</h4>
+          </div>
+          <div class="col-lg-3">13/25 New Avenue, New Heaven, 45Y 73J</div>
+          <div class="col-lg-3">564546 54566 54</div>
+          <div class="col-lg-3">email@email.com</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="GetInTouch">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h5>Get in touch</h5>
+          <ul>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="bi bi-instagram"></i></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 col-xl-6 ml-auto">
+          <form class="form" id="contact-form" method="post" action="contact.php"></form>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="form-label" for="nameContact">Your firstname *</label>
+                <input class="form-control form-control-underlined" type="text" name="nameContact" id="name"
+                  required="required">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="form-label" for="surnameContact">Your lastname *</label>
+                <input class="form-control form-control-underlined" type="text" name="surnameContact" id="surname"
+                  required="required">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="emailContact">Your email *</label>
+            <input class="form-control form-control-underlined" type="email" name="emailContact" id="email"
+              required="required">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="messageContact">Your message for us *</label>
+            <textarea class="form-control form-control-underlined" rows="4" name="messageContact" id="message"
+              required="required" style="height: 81px;"></textarea>
+          </div>
+          <button type="submit">SEND MESSAGE </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <div class="content">
+              <h6>Free shipping & return</h6>
+              <p>Free Shipping over $300</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <i class="bi bi-currency-exchange"></i>
+            <div class="content">
+              <h6>Money back guarantee</h6>
+              <p>30 Days Money Back Guarantee</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <i class="bi bi-coin"></i>
+            <div class="content">
+              <h6>Best prices</h6>
+              <p>Always the best prices</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <i class="bi bi-person"></i>
+            <div class="content">
+              <h6>020-800-456-747</h6>
+              <p>24/7 Available Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h6>Be in touch</h6>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <br>At itaque temporibus.
+            </p>
+            <form action="">
+              <input type="text" placeholder="Your Email address">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </form>
+          </div>
+          <div class="col-lg-7">
+            <div class="col-lg-4">
+              <h6>Shop</h6>
+              <ul class="list">
+                <li class="list-item"> <a>For women</a></li>
+                <li class="list-item"><a> For men</a></li>
+                <li class="list-item"><a>Stores</a></li>
+                <li class="list-item"><a>Our Blog</a></li>
+                <li class="list-item"><a>Shop</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6>Company</h6>
+              <ul class="list">
+                <li class="list-item"><a>Login</a></li>
+                <li class="list-item"><a>Register</a></li>
+                <li class="list-item"><a>Wishlist</a></li>
+                <li class="list-item"><a>Our product</a></li>
+                <li class="list-item"><a>Checkouts</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6>Your account</h6>
+              <ul class="list">
+                <li class="list-item"><a>Login</a></li>
+                <li class="list-item"><a>Register</a></li>
+                <li class="list-item"><a>Wishlist</a></li>
+                <li class="list-item"><a>Our product</a></li>
+                <li class="list-item"><a>Checkouts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p> © 2020 Your company. All rights reserved. </p>
+          </div>
+          <div class="col-lg-8">
+            <p>Terms & Conditions</p>
+            <p>Privacy & cookies</p>
+            <p>Accessibility</p>
+            <p>Customer Data Promise</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js">
+</script>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="./assets/js/map.js"></script>
+
+</html>
