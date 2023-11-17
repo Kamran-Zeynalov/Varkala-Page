@@ -6,6 +6,7 @@
   padding-top: 240px;
   padding-bottom: 100px;
   background-color: #f2f3f7;
+  z-index: 0;
 }
 #Hero .circle {
   position: absolute;
@@ -31,7 +32,7 @@
   font-size: 0.875rem;
   color: #868e96;
   position: relative;
-  z-index: 100;
+  z-index: 0;
 }
 #Hero p .gold {
   font-weight: bold;

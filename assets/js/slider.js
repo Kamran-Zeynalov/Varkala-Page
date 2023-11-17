@@ -1,4 +1,7 @@
-$('.carousel').carousel({
-    interval: 5000,
-    pause: false
-});
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      clickable: true,
+    },
+  });

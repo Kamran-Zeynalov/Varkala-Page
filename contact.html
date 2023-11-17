@@ -4,16 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="./assets/css/contact.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <title>Contact us</title>
   <style>
     #map {
       height: 776px;
@@ -40,34 +43,31 @@
       </div>
       <div><span>Free in-store delivery</span></div>
       <div class="right ml-3">
-        <button class="dropbtn" onclick="toggleDropdown('englishDropdown')">English <i class="fa-solid fa-angle-down"
-            id="englishIcon"></i></button>
-        <div class="dropdown-content" id="englishDropdown">
+        <button class="dropbtn">English <i class="fa-solid fa-angle-down"></i></button>
+        <div class="dropdown-content">
           <a href="#">German</a>
           <a href="#">French</a>
         </div>
-        <button class="dropbtn" onclick="toggleDropdown('usdDropdown')">USD <i class="fa-solid fa-angle-down"
-            id="usdIcon"></i></button>
-        <div class="dropdown-content" id="usdDropdown">
+        <button class="dropbtn">USD <i class="fa-solid fa-angle-down"></i></button>
+        <div class="dropdown-content">
           <a href="#">EUR</a>
           <a href="#">GBR</a>
         </div>
       </div>
-
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="position: absolute; top: 50px; z-index: 5;">
       <div class="row">
         <div class="col-lg-7 col-4">
           <div class="lists">
             <ul>
               <li><a class="active" href="./index.html">Varkala</a></li>
-              <li><a href="./index.html">
-                  Home <i class="fa-solid fa-angle-down"></i></a>
+              <li class="myList active">
+                Home <i class="fa-solid fa-angle-down"></i>
               </li>
-              <li><a href="./index.html">Shop <i class="fa-solid fa-angle-down"></i></a></li>
-              <li><a href="./index.html">Icons <i class="fa-solid fa-angle-down"></i></a></li>
-              <li><a href="./index.html">Pages <i class="fa-solid fa-angle-down"></i></a></li>
-              <li><a href="./index.html">Docs <i class="fa-solid fa-angle-down"></i></a></li>
+              <li class="myList">Shop <i class="fa-solid fa-angle-down"></i></li>
+              <li class="myList">Icons <i class="fa-solid fa-angle-down"></i></li>
+              <li class="myList">Pages <i class="fa-solid fa-angle-down"></i></li>
+              <li class="myList">Docs <i class="fa-solid fa-angle-down"></i></li>
             </ul>
             <ul class="home-list">
               <li>Home 1 - Fashion</li>
@@ -83,23 +83,329 @@
               <input type="text" name="search" id="search" placeholder="Search">
               <i class="bi bi-search"></i>
             </div>
-            <div class="person-basket">
+            <div class="myList person-basket">
               <i class="person bi bi-person"></i>
               <i class="bi bi-heart"></i> <span class="wishlist">3</span>
-              <i class="basket bi bi-basket"></i> <span class="basket-size">3</span>
-              <i id="menuIcon" class="menu bi bi-list"></i>
+              <i class="myList bi bi-basket" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"></i> <span class="baskett">3</span>
+              <i class="myList bi bi-list" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBack"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <section id="SideBasket">
+      <div class="modal-dialog m-0 p-0">
+        <div class="modal-content parent">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="products">
+              <div class="image">
+                <img src="./assets/images/product-square-ian-dooley-347968-unsplash.jpg" alt="">
+              </div>
+              <div class="name-price">
+                <p class="name">Skull Tee</p>
+                <p class="quantity">Quantity: <span class="baseCount">1</span></p>
+                <p class="name" style="font-family: monospace;">&75.00</p>
+              </div>
+              <div class="xBtn btn-close"></div>
+            </div>
+            <div class="products">
+              <div class="image">
+                <img src="./assets/images/product-square-ian-dooley-347968-unsplash.jpg" alt="">
+              </div>
+              <div class="name-price">
+                <p class="name">Skull Tee</p>
+                <p class="quantity">Quantity: <span class="baseCount">1</span></p>
+                <p class="name" style="font-family: monospace;">&75.00</p>
+              </div>
+              <div class="xBtn btn-close"></div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <div class="subTotal">
+              <p>Subtotal:</p>
+              <p class="total">$180.00</p>
+            </div>
+            <button class="view">View Cart</button>
+            <button>Checkout</button>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal fade" id="staticBack" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <section id="SideBasket">
+      <div class="modal-dialog m-0 p-0">
+        <div class="modal-content parent">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+
+          <div class="sidebar-body">
+            <h5>Varkala</h5>
+            <div class="dropdown-container">
+              <ul class="list-column">
+                <li class="column-items active">Home</li>
+                <li class="column-items active">Link</li>
+                <li class="column-items">Disabled</li>
+                <li id="dropdownLink" class="column-items active dropdown">Dropdown link <i
+                    class="fa-solid fa-angle-down rotate-icon"></i></li>
+              </ul>
+
+              <ul id="dropdownList" class="dropdown-list">
+                <li class="dropdown-items">Action</li>
+                <li class="dropdown-items">Another action</li>
+                <li class="dropdown-items">Something else here</li>
+              </ul>
+            </div>
+
+            <div class="contact">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-phone"></i>
+              <span>020-800-456-747</span>
+            </div>
+            <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut
+              out of an
+              illustrated magazine and housed in a nice, gilded frame.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="dropDown">
+    <div id="homeDrop" class="homeDrop animate__animated">
+      <p>Home 1 - Fashion</p>
+      <p>Home 2 - Fashion</p>
+      <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+      <p>Home 4 - Design <span> New</span></p>
+    </div>
+
+    <div id="shopDown" class="shopDown animate__animated">
+      <div class="parent">
+        <div class="pages">
+          <p class="title">Shop pages</p>
+          <p>Full width</p>
+          <p>Full width with category menu</p>
+          <p>Full width with big products</p>
+          <p>Fixed width</p>
+          <p>Fixed width & sidebar</p>
+          <p>Fixed width & masonary layout <span>New</span></p>
+          <p>Subcategory</p>
+        </div>
+        <div class="proPages">
+          <p class="title">Product pages</p>
+          <p>Product with sticky info</p>
+          <p>Product with background</p>
+          <p>Product standard</p>
+        </div>
+        <div class="image">
+          <img src="./assets/images/kyle-loftus-596319-unsplash-cropped.jpg" alt="Person">
+        </div>
+      </div>
+    </div>
+
+    <div id="iconsDown" class="iconsDown animate__animated w-50 m-0 p-0 pt-3">
+      <div class="container-fluid m-0 p-0">
+        <div class="row p-0 m-0">
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><i class="bi bi-person-standing-dress"></i></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+
+          <div class="col-12 bottomText mt-4">
+            <p>Don't miss our biggest sales this year. Use the code "SUMMER35" at checkout until Jun. 15!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagesDown" class="pagesDown animate__animated">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <div class="image-info">
+              <div class="image">
+                <img src="./assets/images/christopher-campbell-28571-unsplash.jpg" alt="">
+              </div>
+              <div class="info-1">
+                <h4>Homepage</h4>
+                <p>Home 1 - Fashion</p>
+                <p>Home 2 - Fashion</p>
+                <p>Home 3 - Design <span>New</span></p>
+                <p>Home 4 - Design <span>New</span></p>
+              </div>
+              <div class="info-1">
+                <h4>Homepage</h4>
+                <p>Home 1 - Fashion</p>
+                <p>Home 2 - Fashion</p>
+                <p>Home 3 - Design <span>New</span></p>
+                <p>Home 4 - Design <span>New</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="image-info">
+              <div class="image">
+                <img src="./assets/images/ian-dooley-347962-unsplash.jpg" alt="">
+              </div>
+              <div class="info-1">
+                <h4>Homepage</h4>
+                <p>Home 1 - Fashion</p>
+                <p>Home 2 - Fashion</p>
+                <p>Home 3 - Design <span>New</span></p>
+                <p>Home 4 - Design <span>New</span></p>
+              </div>
+              <div class="info-1">
+                <h4>Homepage</h4>
+                <p>Home 1 - Fashion</p>
+                <p>Home 2 - Fashion</p>
+                <p>Home 3 - Design <span>New</span></p>
+                <p>Home 4 - Design <span>New</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="image-info">
+              <div class="image">
+                <img src="./assets/images/ian-dooley-347942-unsplash.jpg" alt="">
+              </div>
+              <div class="info-1">
+                <h4>Homepage</h4>
+                <p>Home 1 - Fashion</p>
+                <p>Home 2 - Fashion</p>
+                <p>Home 3 - Design <span>New</span></p>
+                <p>Home 4 - Design <span>New</span></p>
+              </div>
+              <div class="info-1">
+                <h4>Homepage</h4>
+                <p>Home 1 - Fashion</p>
+                <p>Home 2 - Fashion</p>
+                <p>Home 3 - Design <span>New</span></p>
+                <p>Home 4 - Design <span>New</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="image-info">
+              <div class="image">
+                <img src="./assets/images/photo-1534126511673-b6899657816a.jpg" alt="">
+              </div>
+              <div class="info-1">
+                <h4>Homepage</h4>
+                <p>Home 1 - Fashion</p>
+                <p>Home 2 - Fashion</p>
+                <p>Home 3 - Design <span>New</span></p>
+                <p>Home 4 - Design <span>New</span></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  </header>
+    <div id="docsDrop" class="docsDrop animate__animated">
+      <p>Introduction</p>
+      <p>Directory structure</p>
+      <p>Gulp</p>
+      <p>Customizing CSS</p>
+      <p>Credits</p>
+      <p style="border-bottom: 1px solid lightgray;padding-bottom: 20px;">Changelog</p>
+      <p>Bootstrap</p>
+      <p>Theme</p>
+    </div>
+
+  </section>
 
   <section id="Hero">
 
     <div class="circle"></div>
-    <img class="paralax" src="./contact-assets/images/HM-services-removebg-preview.png" alt="Blog">
+    <img class="paralax" src="./assets/images/0cf24d64-4d11-4adc-ad08-e75a5d84f2db-removebg-preview (1).png" alt="Blog">
 
     <div class="container">
       <p><span class="gold">Home</span> <span class="stick"> </span> <span>Contact</span></p>
@@ -327,12 +633,13 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
   </script>
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js">
 </script>
-
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="./assets/js/drop.js"></script>
+<script src="./assets/js/script.js"></script>
 <script src="./assets/js/map.js"></script>
 
 </html>

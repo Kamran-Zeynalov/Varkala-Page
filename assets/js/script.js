@@ -15,7 +15,10 @@ function handleClick(index) {
           drop.classList.add("animate__fadeInUp");
           drop.classList.remove("animate__fadeOutDown");
           drop.style.display = "inline-block";
+          drop.style.zIndex = "2";
         } else {
+          drop.style.zIndex = "0";
+
           drop.classList.add("animate__fadeOutDown");
           drop.classList.remove("animate__fadeInUp");
           setTimeout(() => {

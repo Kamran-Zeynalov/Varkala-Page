@@ -7,7 +7,7 @@
     padding-top: 240px;
     padding-bottom: 100px;
     background-color: #f2f3f7;
-  
+    z-index: 0;
   
     .circle {
       position: absolute;
@@ -36,7 +36,7 @@
       font-size: .875rem;
       color: #868e96;
       position: relative;
-      z-index: 100;
+      z-index: 0;
   
       .gold {
         font-weight: bold;
