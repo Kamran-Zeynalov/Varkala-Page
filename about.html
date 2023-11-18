@@ -77,7 +77,7 @@
               <i class="person bi bi-person"></i>
               <i class="bi bi-heart"></i> <span class="wishlist">3</span>
               <i class="myList bi bi-basket" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"></i> <span class="baskett">3</span>
+                data-bs-target="#staticBackdrop"></i> <span class="baskett">0</span>
               <i class="myList bi bi-list" type="button" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#staticBack"></i>
             </div>
@@ -89,52 +89,31 @@
 
 
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <section id="SideBasket">
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <section id="SideBasket">
       <div class="modal-dialog m-0 p-0">
-        <div class="modal-content parent">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="products">
-              <div class="image">
-                <img src="./assets/images/product-square-ian-dooley-347968-unsplash.jpg" alt="">
+          <div class="modal-content parent jsparent">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="name-price">
-                <p class="name">Skull Tee</p>
-                <p class="quantity">Quantity: <span class="baseCount">1</span></p>
-                <p class="name" style="font-family: monospace;">&75.00</p>
-              </div>
-              <div class="xBtn btn-close"></div>
-            </div>
-            <div class="products">
-              <div class="image">
-                <img src="./assets/images/product-square-ian-dooley-347968-unsplash.jpg" alt="">
-              </div>
-              <div class="name-price">
-                <p class="name">Skull Tee</p>
-                <p class="quantity">Quantity: <span class="baseCount">1</span></p>
-                <p class="name" style="font-family: monospace;">&75.00</p>
-              </div>
-              <div class="xBtn btn-close"></div>
-            </div>
+              <div class="modal-body">
+             
 
+              </div>
+              <div class="modal-footer">
+                  <div class="subTotal">
+                      <p>Subtotal:</p>
+                      <p class="total"><span class="total_price">0</span></p>
+                  </div>
+                  <button class="view">View Cart</button>
+                  <button>Checkout</button>
+              </div>
+              <div class="modal-footer">
+              </div>
           </div>
-          <div class="modal-footer">
-            <div class="subTotal">
-              <p>Subtotal:</p>
-              <p class="total">$180.00</p>
-            </div>
-            <button class="view">View Cart</button>
-            <button>Checkout</button>
-          </div>
-          <div class="modal-footer">
-          </div>
-        </div>
       </div>
-    </section>
-  </div>
+  </section>
+</div>
 
   <div class="modal fade" id="staticBack" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -747,6 +726,7 @@
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/basket.js"></script>
 <script src="./assets/js/drop.js"></script>
+<script src="./assets/js/basket.js"></script>
 <script src="./assets/js/"></script>
 
 </html>
