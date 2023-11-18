@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -82,7 +85,8 @@
                             <i class="bi bi-search"></i>
                         </div>
                         <div class="myList person-basket">
-                            <i class="person bi bi-person"></i>
+                            <i class="person bi bi-person" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#static"></i>
                             <i class="bi bi-heart"></i> <span class="wishlist">3</span>
                             <i class="myList bi bi-basket" type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop"></i> <span class="baskett">3</span>
@@ -184,6 +188,258 @@
 
                 </div>
             </div>
+        </section>
+    </div>
+
+    <div class="modal fade" id="static" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <section id="SideBasket">
+            <div class="modal-dialog m-0 p-0 ">
+                <div class="modal-content parent">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+
+                    <div class="sidebar-body">
+                        <h5>
+                            <span id="Login">Login</span>
+                            <span id="Register">Register</span>
+                        </h5>
+                        <div id="loginPage" class="loginPage">
+                            <form action="">
+                                <div class="inputs">
+                                    <label for="email">
+                                        <p>Email</p>
+                                        <p><input type="email" name="email" id="email"></p>
+                                    </label>
+
+                                    <label class="passs" for="pass">
+                                        <p class="forgot">Password</p>
+                                        <p class="forgot">forgot passworw</p>
+                                    </label>
+                                    <p class="inp"><input type="password" name="pass" id="pass" placeholder="Password">
+                                    </p>
+
+                                    <label class="check" for="check">
+                                        <input type="checkbox" name="check" id="check">
+                                        Remember me for 30 days
+                                    </label>
+
+                                    <button>
+                                        <i class="fa fa-sign-in-alt mr-2"></i>
+                                        Log in
+                                    </button>
+                                </div>
+                                <div class="line">
+                                    <p class="line"></p>
+                                    <p>OR</p>
+                                    <p class="line"></p>
+                                </div>
+
+                                <div class="icons">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-google"></i>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="registerPage" class="registerPage">
+                            <form action="">
+                                <div class="inputs">
+                                    <p class="text">
+                                        The bedding was hardly able to cover it and seemed ready to slide off any
+                                        moment. His many legs, pit.
+                                    </p>
+                                    <label for="email">
+                                        <p>Name</p>
+                                        <p><input type="text" name="name" id="name"></p>
+                                    </label>
+                                    <label for="email">
+                                        <p>Email</p>
+                                        <p><input type="email" name="email" id="email"></p>
+                                    </label>
+
+                                    <label class="passs" for="pass">
+                                        <p class="forgot">Password</p>
+                                        <p class="forgot">forgot passworw</p>
+                                    </label>
+                                    <p class="inp"><input type="password" name="pass" id="pass" placeholder="Password">
+                                    </p>
+                                    <button>
+                                        <i class="fa fa-sign-in-alt mr-2"></i>
+                                        Log in
+                                    </button>
+                                </div>
+                                <div class="line">
+                                    <p class="line"></p>
+                                    <p>OR</p>
+                                    <p class="line"></p>
+                                </div>
+
+                                <div class="icons">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-google"></i>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <div class="modal fade" id="stat" data-bs-backdrop="stat" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <section id="SideBasket">
+            <div class="modal-dialog m-0 p-0">
+                <div class="modal-content parent w-100">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="sidebar-body w-100">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="product-badge badge fresh">Fresh</div>
+                                <div class="product-badge badge sale">Sale</div>
+                                <div class="slider-for">
+                                    <div><img src="./assets/images/detail-1-gray.jpg" alt="Image 1"></div>
+                                    <div><img src="./assets/images/detail-2-gray.jpg" alt="Image 2"></div>
+                                    <div><img src="./assets/images/detail-3-gray.jpg" alt="Image 3"></div>
+                                    <div><img src="./assets/images/detail-4-gray.jpg" alt="Image 4"></div>
+                                    <div><img src="./assets/images/detail-5-gray.jpg" alt="Image 5"></div>
+                                </div>
+
+                                <div class="slider-nav">
+                                    <div><img src="./assets/images/detail-1-gray.jpg" alt="Image 1"></div>
+                                    <div><img src="./assets/images/detail-2-gray.jpg" alt="Image 2"></div>
+                                    <div><img src="./assets/images/detail-3-gray.jpg" alt="Image 3"></div>
+                                    <div><img src="./assets/images/detail-4-gray.jpg" alt="Image 4"></div>
+                                    <div><img src="./assets/images/detail-5-gray.jpg" alt="Image 5"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 p-lg-5">
+                                <button class="close close-absolute close-rotate" type="button" data-dismiss="modal"
+                                    aria-label="Close">
+                                </button>
+                                <h2>Push-up Jeans</h2>
+                                <div
+                                    class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between mb-4">
+                                    <ul class="list-inline mb-2 mb-sm-0">
+                                        <li class="list-inline-item h4 font-weight-light mb-0">$65.00</li>
+                                        <li class="list-inline-item text-muted font-weight-light">
+                                            <del>$90.00</del>
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center text-sm">
+                                        <ul class="list-inline mr-2 mb-0">
+                                            <li class="list-inline-item mr-0"><i class="fa fa-star text-primary"></i>
+                                            </li>
+                                            <li class="list-inline-item mr-0"><i class="fa fa-star text-primary"></i>
+                                            </li>
+                                            <li class="list-inline-item mr-0"><i class="fa fa-star text-primary"></i>
+                                            </li>
+                                            <li class="list-inline-item mr-0"><i class="fa fa-star text-primary"></i>
+                                            </li>
+                                            <li class="list-inline-item mr-0"><i class="fa fa-star text-gray-300"></i>
+                                            </li>
+                                        </ul><span class="text-muted text-uppercase">25 reviews</span>
+                                    </div>
+                                </div>
+                                <p class="mb-4 text-muted">Samsa was a travelling salesman - and above it there hung a
+                                    picture that he had
+                                    recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+                                <form id="buyForm_modal" action="#">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-12 detail-option mb-4">
+                                            <h6 class="detail-option-heading">Size <span>(required)</span></h6>
+                                            <div class="dropdown bootstrap-select dropup"><select class="selectpicker"
+                                                    name="size" data-style="btn-selectpicker" tabindex="null">
+                                                    <option value="value_0">Small</option>
+                                                    <option value="value_1">Medium</option>
+                                                    <option value="value_2">Large</option>
+                                                </select><button type="button" tabindex="-1"
+                                                    class="btn dropdown-toggle btn-selectpicker" data-toggle="dropdown"
+                                                    role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox"
+                                                    aria-expanded="false" title="Small">
+                                                    <div class="filter-option">
+                                                        <div class="filter-option-inner">
+                                                            <div class="filter-option-inner-inner">Small</div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <div class="dropdown-menu"
+                                                    style="max-height: 327.2px; overflow: hidden; min-height: 0px;">
+                                                    <div class="inner show" role="listbox" id="bs-select-1"
+                                                        tabindex="-1" aria-activedescendant="bs-select-1-0"
+                                                        style="max-height: 311.2px; overflow-y: auto; min-height: 0px;">
+                                                        <ul class="dropdown-menu inner show" role="presentation"
+                                                            style="margin-top: 0px; margin-bottom: 0px;">
+                                                            <li class="selected active"><a role="option"
+                                                                    class="dropdown-item active selected"
+                                                                    id="bs-select-1-0" tabindex="0" aria-setsize="3"
+                                                                    aria-posinset="1" aria-selected="true"><span
+                                                                        class="text">Small</span></a></li>
+                                                            <li><a role="option" class="dropdown-item"
+                                                                    id="bs-select-1-1" tabindex="0"><span
+                                                                        class="text">Medium</span></a></li>
+                                                            <li><a role="option" class="dropdown-item"
+                                                                    id="bs-select-1-2" tabindex="0"><span
+                                                                        class="text">Large</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-12 detail-option mb-5">
+                                            <h6 class="detail-option-heading">Type <span>(required)</span></h6>
+                                            <label class="btn btn-sm detail-option-btn-label" for="material_0_modal">
+                                                Hoodie
+                                                <input class="input-invisible" type="radio" name="material"
+                                                    value="value_0" id="material_0_modal" required="" wfd-id="id1">
+                                            </label>
+                                            <label class="btn btn-sm detail-option-btn-label" for="material_1_modal">
+                                                College
+                                                <input class="input-invisible" type="radio" name="material"
+                                                    value="value_1" id="material_1_modal" required="" wfd-id="id2">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group w-100 mb-4">
+                                        <input class=" detail-quantity" name="items" type="number" value="1"
+                                            wfd-id="id3">
+                                        <div class="input-group-append flex-grow-1">
+                                            <button class="btn btn-dark btn-block" type="submit"> <i
+                                                    class="fa fa-shopping-cart mr-2"></i>Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6"><a href="#"> <i class="far fa-heart mr-2"></i>Add to wishlist
+                                            </a></div>
+                                        <div class="col-6 text-right">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item mr-2"><a
+                                                        class="text-dark text-hover-primary" href="#"><i
+                                                            class="fab fa-facebook-f"> </i></a></li>
+                                                <li class="list-inline-item"><a class="text-dark text-hover-primary"
+                                                        href="#"><i class="fab fa-twitter">
+                                                        </i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Category:</strong> <a class="text-muted" href="#">Jeans</a></li>
+                                        <li><strong>Tags:</strong> <a class="text-muted" href="#">Leisure</a>, <a
+                                                class="text-muted" href="#">Elegant</a>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
         </section>
     </div>
 
@@ -405,107 +661,104 @@
             <div class="row">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="title-text-button">
-                                    <div class="title">
-                                        <h3>Time is Almost up</h3>
-                                        <h1>Design clocks on sale</h1>
-                                    </div>
-                
-                                    <div class="button">
-                                        <button>START SHOPPING</button>
-                                    </div>
-                                    <div class="back">
-                                        <svg id="10015.io" viewBox="0 0 480 480"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <path fill="#e7eaf9"
-                                                d="M339,352Q240,464,135,352Q30,240,135,138.5Q240,37,339,138.5Q438,240,339,352Z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="image">
-                                    <img src="./assets/images/clock-transparent.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="title-text-button">
-                                    <div class="title">
-                                        <h3>Our all-time favourites</h3>
-                                        <h1>Black & White</h1>
-                                    </div>
-                                    <div class="text">
-                                        <p>The bedding was hardly able to cover it and seemed ready to slide off
-                                            any
-                                            moment. His
-                                            many legs, pit</p>
-                                    </div>
-                                    <div class="button">
-                                        <button>DISCOVER MORE</button>
-                                    </div>
-                                    <div class="back">
-                                        <svg id="10015.io" viewBox="0 0 480 480"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <path fill="#ffdddd"
-                                                d="M350.5,343Q240,446,133,343Q26,240,133,121.5Q240,3,350.5,121.5Q461,240,350.5,343Z" />
-                                        </svg>
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="title-text-button">
+                                        <div class="title">
+                                            <h3>Time is Almost up</h3>
+                                            <h1>Design clocks on sale</h1>
+                                        </div>
+
+                                        <div class="button">
+                                            <button>START SHOPPING</button>
+                                        </div>
+                                        <div class="back">
+                                            <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path fill="#e7eaf9"
+                                                    d="M339,352Q240,464,135,352Q30,240,135,138.5Q240,37,339,138.5Q438,240,339,352Z" />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="image">
-                                    <img src="./assets/images/chair2-transparent.png" alt="">
+                                <div class="col-6">
+                                    <div class="image">
+                                        <img src="./assets/images/clock-transparent.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="title-text-button">
-                                    <div class="title">
-                                        <h3>Our all-time Favourites</h3>
-                                        <h1>Boxxez</h1>
-                                    </div>
-                                    <div class="text">
-                                        <p>The bedding was hardly able to cover it and seemed ready to slide off
-                                            any
-                                            moment. His
-                                            many legs, pit</p>
-                                    </div>
-                                    <div class="button">
-                                        <button>DISCOVER MORE</button>
-                                    </div>
-                                    <div class="back">
-                                        <svg id="10015.io" viewBox="0 0 480 480"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <path fill="#f5e6a8"
-                                                d="M342,359Q240,478,142.5,359Q45,240,142.5,127Q240,14,342,127Q444,240,342,359Z" />
-                                        </svg>
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="title-text-button">
+                                        <div class="title">
+                                            <h3>Our all-time favourites</h3>
+                                            <h1>Black & White</h1>
+                                        </div>
+                                        <div class="text">
+                                            <p>The bedding was hardly able to cover it and seemed ready to slide off
+                                                any
+                                                moment. His
+                                                many legs, pit</p>
+                                        </div>
+                                        <div class="button">
+                                            <button>DISCOVER MORE</button>
+                                        </div>
+                                        <div class="back">
+                                            <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path fill="#ffdddd"
+                                                    d="M350.5,343Q240,446,133,343Q26,240,133,121.5Q240,3,350.5,121.5Q461,240,350.5,343Z" />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="image">
-                                    <img src="./assets/images/box-transparent.png" alt="">
+                                <div class="col-6">
+                                    <div class="image">
+                                        <img src="./assets/images/chair2-transparent.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="title-text-button">
+                                        <div class="title">
+                                            <h3>Our all-time Favourites</h3>
+                                            <h1>Boxxez</h1>
+                                        </div>
+                                        <div class="text">
+                                            <p>The bedding was hardly able to cover it and seemed ready to slide off
+                                                any
+                                                moment. His
+                                                many legs, pit</p>
+                                        </div>
+                                        <div class="button">
+                                            <button>DISCOVER MORE</button>
+                                        </div>
+                                        <div class="back">
+                                            <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path fill="#f5e6a8"
+                                                    d="M342,359Q240,478,142.5,359Q45,240,142.5,127Q240,14,342,127Q444,240,342,359Z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="image">
+                                        <img src="./assets/images/box-transparent.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-pagination">
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </section>
@@ -664,7 +917,7 @@
                             sections
                         </p>
                     </div>
-                    <div class="row mt-5 mb-5 gx-5">
+                    <div class="parentItem row mt-5 mb-5 gx-5">
                         <div class="col-8">
                             <div class="filter">
                                 <ul>
@@ -682,7 +935,8 @@
                             </div>
                         </div>
 
-                        <div class="col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
+                        <div class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/chair.jpg" alt="Product">
@@ -693,7 +947,8 @@
                                         </div>
                                         <div class="detail">
                                             <i class="bi bi-heart"></i>
-                                            <i class="bi bi-arrows-fullscreen"></i>
+                                            <i class="bi bi-arrows-fullscreen" type="button" class="btn btn-primary"
+                                                data-bs-toggle="modal" data-bs-target="#stat"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -713,7 +968,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
+                        <div class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/book.jpg" alt="Product">
@@ -744,7 +1000,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
+                        <div class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/chair2.jpg" alt="Product">
@@ -775,7 +1032,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
+                        <div class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/chair3.jpg" alt="Product">
@@ -806,7 +1064,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
+                        <div class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/clock.jpg" alt="Product">
@@ -837,7 +1096,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
+                        <div class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/clock3.jpg" alt="Product">
@@ -868,7 +1128,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
+                        <div class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/box.jpg" alt="Product">
@@ -899,7 +1160,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
+                        <div class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/box2.jpg" alt="Product">
@@ -1062,23 +1324,67 @@
         </div>
     </footer>
 
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var sliderFor = $('.slider-for');
+            var sliderNav = $('.slider-nav');
+    
+            function initSliders() {
+                $('.slider-for').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.slider-nav'
+                });
+    
+                $('.slider-nav').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    asNavFor: '.slider-for',
+                    dots: false,
+                    focusOnSelect: true
+                });
+    
+                function setOpacity() {
+                    sliderNav.find('.slick-slide').css('opacity', 0.5);
+                    sliderNav.find('.slick-current').css('opacity', 1);
+                }
+    
+                setOpacity();
+
+                sliderFor.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                    sliderNav.find('.slick-slide').css('opacity', 0.5);
+                    sliderNav.find('.slick-slide[data-slick-index="' + nextSlide + '"]').css('opacity', 1);
+                });
+            }
+    
+            $('#stat').on('shown.bs.modal', function () {
+                setTimeout(function () {
+                    initSliders();
+                }); 
+            });
+        });
+    </script>
 
     <script>
         AOS.init();
-      </script>
+    </script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/drop.js"></script>
+    <script src="./assets/js/basket.js"></script>
 </body>
 
 </html>

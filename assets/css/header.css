@@ -109,6 +109,10 @@ header .lists ul li .active {
 header .lists ul li:hover {
   color: black;
 }
+header .lists ul li i {
+  transition: 0.4s;
+  transform: rotateZ(0deg);
+}
 header .lists .home-list {
   display: none;
   position: relative;
@@ -581,4 +585,465 @@ header .input-basket .person-basket .baskett {
 #staticBack #SideBasket .modal-dialog .parent .modal-body::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 10px;
+}
+
+#static {
+  width: 100%;
+  margin-top: 30px;
+}
+#static .modal-header {
+  padding-top: 35px;
+  padding-right: 30px;
+  border-bottom: none;
+}
+#static #SideBasket {
+  display: flex;
+  justify-content: center;
+}
+#static #SideBasket .modal-dialog {
+  width: 100%;
+}
+#static #SideBasket .modal-dialog .modal-header {
+  border-bottom: none;
+}
+#static #SideBasket .modal-dialog .modal-header button {
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: 0.2s;
+  font-weight: 200;
+}
+#static #SideBasket .modal-dialog .modal-header button:hover {
+  transform: rotate(90deg);
+}
+#static #SideBasket .modal-dialog .sidebar-body {
+  padding: 16px 48px 0 48px;
+  position: relative;
+}
+#static #SideBasket .modal-dialog .sidebar-body h5 {
+  font-size: 27px;
+  font-weight: bolder;
+  padding-bottom: 28px;
+  overflow: hidden;
+  border-bottom: 1px solid lightgray;
+}
+#static #SideBasket .modal-dialog .sidebar-body h5 span {
+  color: gray;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+#static #SideBasket .modal-dialog .sidebar-body h5 span:hover {
+  color: black;
+}
+#static #SideBasket .modal-dialog .sidebar-body h5 #Login {
+  color: #bcac76;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage {
+  margin-top: 20px;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage .text {
+  color: gray;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs .inp {
+  font-size: 19px;
+  font-weight: bold;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs .inp input {
+  border: 1px solid lightgray;
+  outline: none;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 0 auto;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs label {
+  width: 100%;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs label p {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 10px;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs label p input {
+  border: 1px solid lightgray;
+  outline: none;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 0 auto;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs .passs {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs .passs .forgot {
+  display: inline-block;
+  padding: 0;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs .passs .forgot:nth-child(2) {
+  color: #9a884b;
+  font-size: 15px;
+  font-weight: 400;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs .passs .forgot:nth-child(2):hover {
+  border-bottom: 1px solid #9a884b;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs .check {
+  color: gray;
+  margin: 5px 0 20px 0;
+  cursor: pointer;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs button {
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .inputs button:hover {
+  background-color: black;
+  color: white;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .line .line {
+  width: 45%;
+  height: 1px;
+  background-color: lightgray;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .line p {
+  color: gray;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .icons i {
+  width: 43px;
+  height: 42px;
+  text-align: center;
+  padding: 12px;
+  margin-left: 6px;
+  border: 1px solid #bcac76;
+  color: #bcac76;
+  transition: 0.4s;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .icons i:hover {
+  color: black;
+  background-color: #9a884b;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .icons i:nth-child(2) {
+  border-color: lightgray;
+  color: gray;
+}
+#static #SideBasket .modal-dialog .sidebar-body .loginPage form .icons i:nth-child(2):hover {
+  color: white;
+  background-color: gray;
+}
+#static #SideBasket .modal-dialog .sidebar-body #registerPage {
+  display: none;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage {
+  margin-top: 20px;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage .text {
+  color: gray;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs .inp {
+  font-size: 19px;
+  font-weight: bold;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs .inp input {
+  border: 1px solid lightgray;
+  outline: none;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 0 auto;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs label {
+  width: 100%;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs label p {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 10px;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs label p input {
+  border: 1px solid lightgray;
+  outline: none;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 0 auto;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs .passs {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs .passs .forgot {
+  display: inline-block;
+  padding: 0;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs .passs .forgot:nth-child(2) {
+  color: #9a884b;
+  font-size: 15px;
+  font-weight: 400;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs .passs .forgot:nth-child(2):hover {
+  border-bottom: 1px solid #9a884b;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs .check {
+  color: gray;
+  margin: 5px 0 20px 0;
+  cursor: pointer;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs button {
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .inputs button:hover {
+  background-color: black;
+  color: white;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .line .line {
+  width: 45%;
+  height: 1px;
+  background-color: lightgray;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .line p {
+  color: gray;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .icons i {
+  width: 43px;
+  height: 42px;
+  text-align: center;
+  padding: 12px;
+  margin-left: 6px;
+  border: 1px solid #bcac76;
+  color: #bcac76;
+  transition: 0.4s;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .icons i:hover {
+  color: black;
+  background-color: #9a884b;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .icons i:nth-child(2) {
+  border-color: lightgray;
+  color: gray;
+}
+#static #SideBasket .modal-dialog .sidebar-body .registerPage form .icons i:nth-child(2):hover {
+  color: white;
+  background-color: gray;
+}
+
+#stat {
+  width: 100%;
+}
+#stat .modal-header {
+  padding-right: 30px;
+  border-bottom: none;
+}
+#stat .modal-dialog {
+  max-width: 1300px;
+}
+#stat #SideBasket {
+  display: flex;
+  justify-content: center;
+}
+#stat #SideBasket .modal-dialog {
+  width: 100%;
+}
+#stat #SideBasket .modal-dialog .modal-header {
+  border-bottom: none;
+}
+#stat #SideBasket .modal-dialog .modal-header button {
+  margin-right: 10px;
+  font-size: 20px;
+  transition: 0.2s;
+  font-weight: 200;
+}
+#stat #SideBasket .modal-dialog .modal-header button:hover {
+  transform: rotate(90deg);
+}
+#stat #SideBasket .modal-dialog .sidebar-body {
+  padding: 16px 48px 0 48px;
+  position: relative;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .modal-body img {
+  width: 538px;
+  max-height: 538px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .additional-info {
+  padding: 20px;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .slider-nav {
+  padding-top: 10px;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .slider-for img,
+#stat #SideBasket .modal-dialog .sidebar-body .slider-nav img {
+  visibility: visible;
+  max-width: 100%;
+  height: auto !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .slider-nav img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .col-lg-6 h2 {
+  margin-bottom: 1.5rem;
+  font-weight: bolder;
+  color: #212529;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .text-primary {
+  color: #bcac76 !important;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .text-gray-300 {
+  color: #dee2e6;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .text-uppercase {
+  letter-spacing: 0.15em;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .detail-option-heading span {
+  color: #adb5bd;
+  font-family: "vremenagrotesk", sans-serif;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .detail-quantity {
+  max-width: 5rem;
+  text-align: center;
+  color: #212529;
+  border-radius: 0;
+  border-color: #212529;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .btn-dark {
+  border-radius: 0;
+}
+#stat #SideBasket .modal-dialog .sidebar-body a {
+  color: #bcac76;
+}
+#stat #SideBasket .modal-dialog .sidebar-body a:hover {
+  color: #817241;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .fab:hover {
+  color: #817241;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .detail-option-btn-label {
+  color: #bcac76;
+  border-color: #bcac76;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .detail-option-btn-label:hover {
+  color: #212529;
+  background-color: #a89454;
+  border-color: #a89454;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .input-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .btn {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .detail-option .btn-selectpicker {
+  background-color: #fff;
+  color: #495057;
+  border: 1px solid #ced4da;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .detail-option-btn-label {
+  margin-right: 10px;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .detail-quantity {
+  border: 1px solid #ced4da;
+  outline: none;
+  font-size: 20px;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .btn-dark {
+  padding: 12px;
+  background-color: #343a40;
+  color: #fff;
+  border: 1px solid #343a40;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .btn-dark:hover {
+  background-color: #23272b;
+  border: 1px solid #23272b;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .text-hover-primary:hover {
+  color: #007bff;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .detail-option .btn-selectpicker {
+  display: none;
+}
+#stat #SideBasket .modal-dialog .sidebar-body select {
+  border: 1px solid #ced4da;
+  width: 220px;
+  padding: 9px 12px;
+  color: #495057;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  outline: none;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .btn-selectpicker {
+  border-color: #817241;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .filter-option {
+  height: 100px;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .fresh {
+  background-color: #a89454;
+  color: #343a40;
+  padding: 2px 6px 6px 6px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  z-index: 100;
+  font-size: 14px;
+}
+#stat #SideBasket .modal-dialog .sidebar-body .sale {
+  background-color: #23272b;
+  color: white;
+  padding: 4px 6px 6px 6px;
+  position: absolute;
+  top: 65px;
+  left: 25px;
+  z-index: 100;
 }/*# sourceMappingURL=header.css.map */

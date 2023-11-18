@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <title>About</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="left">
+        <div class="social-media">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-phone"></i>
+          <span>020-800-456-747</span>
+        </div>
+      </div>
+      <div><span>Free in-store delivery</span></div>
+      <div class="right ml-3">
+        <button class="dropbtn">English <i class="fa-solid fa-angle-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">German</a>
+          <a href="#">French</a>
+        </div>
+        <button class="dropbtn">USD <i class="fa-solid fa-angle-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">EUR</a>
+          <a href="#">GBR</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid"
+      style="position: absolute; top: 50px; z-index: 5;padding-bottom: 12px; border-bottom: 1px solid #f8f9fa; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
+      <div class="row">
+        <div class="col-lg-7 col-4">
+          <div class="lists">
+            <ul>
+              <li><a class="active" href="./index.html">Varkala</a></li>
+              <li class="myList active">
+                Home <i class="fa-solid fa-angle-down"></i>
+              </li>
+              <li class="myList">Shop <i class="fa-solid fa-angle-down"></i></li>
+              <li class="myList">Icons <i class="fa-solid fa-angle-down"></i></li>
+              <li class="myList">Pages <i class="fa-solid fa-angle-down"></i></li>
+              <li class="myList">Docs <i class="fa-solid fa-angle-down"></i></li>
+            </ul>
+            <ul class="home-list">
+              <li>Home 1 - Fashion</li>
+              <li>Home 2 - Fashion</li>
+              <li>Home 3 - Design <span> New</span></li>
+              <li>Home 4 - Design <span> New</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5 col-4">
+          <div class="input-basket">
+            <div class="search">
+              <input type="text" name="search" id="search" placeholder="Search">
+              <i class="bi bi-search"></i>
+            </div>
+            <div class="myList person-basket">
+              <i class="person bi bi-person"></i>
+              <i class="bi bi-heart"></i> <span class="wishlist">3</span>
+              <i class="myList bi bi-basket" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"></i> <span class="baskett">3</span>
+              <i class="myList bi bi-list" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBack"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <section id="SideBasket">
+      <div class="modal-dialog m-0 p-0">
+        <div class="modal-content parent">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="products">
+              <div class="image">
+                <img src="./assets/images/product-square-ian-dooley-347968-unsplash.jpg" alt="">
+              </div>
+              <div class="name-price">
+                <p class="name">Skull Tee</p>
+                <p class="quantity">Quantity: <span class="baseCount">1</span></p>
+                <p class="name" style="font-family: monospace;">&75.00</p>
+              </div>
+              <div class="xBtn btn-close"></div>
+            </div>
+            <div class="products">
+              <div class="image">
+                <img src="./assets/images/product-square-ian-dooley-347968-unsplash.jpg" alt="">
+              </div>
+              <div class="name-price">
+                <p class="name">Skull Tee</p>
+                <p class="quantity">Quantity: <span class="baseCount">1</span></p>
+                <p class="name" style="font-family: monospace;">&75.00</p>
+              </div>
+              <div class="xBtn btn-close"></div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <div class="subTotal">
+              <p>Subtotal:</p>
+              <p class="total">$180.00</p>
+            </div>
+            <button class="view">View Cart</button>
+            <button>Checkout</button>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal fade" id="staticBack" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <section id="SideBasket">
+      <div class="modal-dialog m-0 p-0">
+        <div class="modal-content parent">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+
+          <div class="sidebar-body">
+            <h5>Varkala</h5>
+            <div class="dropdown-container">
+              <ul class="list-column">
+                <li class="column-items active">Home</li>
+                <li class="column-items active">Link</li>
+                <li class="column-items">Disabled</li>
+                <li id="dropdownLink" class="column-items active dropdown">Dropdown link <i
+                    class="fa-solid fa-angle-down rotate-icon"></i></li>
+              </ul>
+
+              <ul id="dropdownList" class="dropdown-list">
+                <li class="dropdown-items">Action</li>
+                <li class="dropdown-items">Another action</li>
+                <li class="dropdown-items">Something else here</li>
+              </ul>
+            </div>
+
+            <div class="contact">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-phone"></i>
+              <span>020-800-456-747</span>
+            </div>
+            <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut
+              out of an
+              illustrated magazine and housed in a nice, gilded frame.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <section id="dropDown">
+    <div id="homeDrop" class="homeDrop animate__animated">
+      <p>Home 1 - Fashion</p>
+      <p>Home 2 - Fashion</p>
+      <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+      <p>Home 4 - Design <span> New</span></p>
+    </div>
+
+    <div id="shopDown" class="shopDown animate__animated">
+      <div class="parent">
+        <div class="pages">
+          <p class="title">Shop pages</p>
+          <p>Full width</p>
+          <p>Full width with category menu</p>
+          <p>Full width with big products</p>
+          <p>Fixed width</p>
+          <p>Fixed width & sidebar</p>
+          <p>Fixed width & masonary layout <span>New</span></p>
+          <p>Subcategory</p>
+        </div>
+        <div class="proPages">
+          <p class="title">Product pages</p>
+          <p>Product with sticky info</p>
+          <p>Product with background</p>
+          <p>Product standard</p>
+        </div>
+        <div class="image">
+          <img src="./assets/images/kyle-loftus-596319-unsplash-cropped.jpg" alt="Person">
+        </div>
+      </div>
+    </div>
+
+    <div id="iconsDown" class="iconsDown animate__animated w-50 m-0 p-0 pt-3">
+      <div class="container-fluid m-0 p-0">
+        <div class="row p-0 m-0">
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/jeans_7764707.png" alt=""></p>
+              <p class="dress">Trousers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/jacket_3515805.png" alt=""></i></p>
+              <p class="dress">Jackets</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/tshirt_6137585.png" alt=""></i></p>
+              <p class="dress">T-Shirts</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/tshirt_7452295.png" alt=""></i></p>
+              <p class="dress">Shirts</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/sweater_1140145.png" alt=""></i></p>
+              <p class="dress">Pullovers</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/scarf_3111997.png" alt=""></i></p>
+              <p class="dress">Scarfs</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/shorts_902445.png" alt=""></p>
+              <p class="dress">Shorts</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/swim-shorts_5406873.png" alt=""></p>
+              <p class="dress">Underwear</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/smartwatch_640216.png" alt=""></p>
+              <p class="dress">Watches</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/briefcase_2636174.png" alt=""></p>
+              <p class="dress">Bags</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/baseball-hat_1446634.png" alt=""></p>
+              <p class="dress">Caps</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="icon-name">
+              <p><img src="./assets/images/bow-tie_2987555.png" alt=""></p>
+              <p class="dress">Accessories</p>
+            </div>
+          </div>
+
+          <div class="col-12 bottomText mt-4">
+            <p>Don't miss our biggest sales this year. Use the code "SUMMER35" at checkout until Jun. 15!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagesDown" class="pagesDown animate__animated">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <div class="image-info">
+              <div class="image">
+                <img src="./assets/images/christopher-campbell-28571-unsplash.jpg" alt="">
+              </div>
+              <div class="info-1">
+                <h4>Homepage</h4>
+                <p>Home 1 - Fashion</p>
+                <p>Home 2 - Fashion</p>
+                <p>Home 3 - Design <span>New</span></p>
+                <p>Home 4 - Design <span>New</span></p>
+              </div>
+              <div class="info-1">
+                <h4>Category</h4>
+                <p>Full width</p>
+                <p>Full width with category menu</p>
+                <p>Full width with big products</p>
+                <p>Fixed width</p>
+                <p>Fixed width & sidebar</p>
+                <p>Fixed width & masonry layout</p>
+                <p>Subcategories <span>New</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="image-info">
+              <div class="image">
+                <img src="./assets/images/ian-dooley-347962-unsplash.jpg" alt="">
+              </div>
+              <div class="info-1">
+                <h4>Order process</h4>
+                <p>Shopping cart</p>
+                <p>Checkout - Five steps<span>New</span></p>
+                <p>Checkout - Single-page</p>
+                <p>Checkout - confirmed</p>
+                <p>Wishlist</p>
+              </div>
+              <div class="info-1">
+                <h4>Product</h4>
+                <p>Product with sticky info</p>
+                <p>Product with background</p>
+                <p>Product standart</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="image-info">
+              <div class="image">
+                <img src="./assets/images/ian-dooley-347942-unsplash.jpg" alt="">
+              </div>
+              <div class="info-1">
+                <h4>Blog</h4>
+                <p><a href="./blog.html">Blog</a></p>
+                <p>Blog -Masonry</p>
+                <p>Post</p>
+              </div>
+              <div class="info-1">
+                <h4>About</h4>
+                <p><a href="./about.html">About - Company <span>New</span></a></p>
+                <p>About v.2 - Person <span>New</span></p>
+                <p>F.A.Q.<span>New</span></p>
+                <p><a href="./contact.html">Contact</a></p>
+                <p>Privacy policy <span>New</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="image-info">
+              <div class="image">
+                <img src="./assets/images/photo-1534126511673-b6899657816a.jpg" alt="">
+              </div>
+              <div class="info-1">
+                <h4>Customer</h4>
+                <p>Login/sign up <span>New</span></p>
+                <p>Orders <span>New</span></p>
+                <p>Order detail <span>New</span></p>
+                <p>Order tracking <span>New</span></p>
+                <p>Adresses<span>New</span></p>
+                <p>Profile <span>New</span></p>
+                <p>Wishlist <span>New</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="docsDrop" class="docsDrop animate__animated">
+      <p>Introduction</p>
+      <p>Directory structure</p>
+      <p>Gulp</p>
+      <p>Customizing CSS</p>
+      <p>Credits</p>
+      <p style="border-bottom: 1px solid lightgray;padding-bottom: 20px;">Changelog</p>
+      <p>Bootstrap</p>
+      <p>Theme</p>
+    </div>
+
+  </section>
+
+
+  <section id="AboutUs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2">
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-6">
+          <h6>ABOUT US</h6>
+          <h1>We are Varkala</h1>
+          <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
+            belly, slightly domed and divided by arches into stiff sections</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="History">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2">
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-8">
+          <h6>THE OLD TIMES</h6>
+          <h2>History of Varkala</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="./assets/images/raoul-ortega-2JtF6pYAOOI-unsplash.jpg" alt="">
+        </div>
+        <div class="col-md-6 ml-6">
+          <div>
+            <h6>HUMBLE BEGINNINGS</h6>
+            <h2>We started as little</h2>
+            <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs,
+              pitifully
+              thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to
+              me?" he thought. It wasn't a dream.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <h6>VARKALA TODAY</h6>
+            <h2>And then we grew a bit</h2>
+            <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs,
+              pitifully
+              thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to
+              me?" he thought. It wasn't a dream.</p>
+          </div>
+
+        </div>
+        <div class="col-sm-4 ml-6">
+          <img src="./assets/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Milestones">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h2>Varkala's Milestones</h2>
+          <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
+            belly, slightly domed and divided by arches into stiff sections </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>1995</h4>
+              <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into
+                a horrible vermin </p>
+            </div>
+            <div class="col-lg-6">
+              <h4>2000</h4>
+              <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs,
+                pitifully thin compared </p>
+            </div>
+            <div class="col-lg-6">
+              <h4>2010</h4>
+              <p>His room, a proper human room although a little too small, lay peacefully between its four familiar
+                walls. A collection </p>
+            </div>
+            <div class="col-lg-6">
+              <h4>2018</h4>
+              <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an
+                illustrated magaz </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Founder">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <img src="./assets/images/avatar-0.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <blockquote>
+            <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an
+              illustrated magazine and housed in a nice, gilded frame.
+            </p>
+            <h6>— FRANKIE KAFKA, FOUNDER</h6>
+          </blockquote>
+          <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an
+            illustrated magazine and housed in a nice, gilded frame.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Team">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2">
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-10">
+          <h6>OUR TEAM</h6>
+          <h1>People</h1>
+          <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering
+            legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="./assets/images/avatar-0.jpg" alt="">
+              <h4>Frankie Kafka</h4>
+              <p>CEO & Founder</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="./assets/images/avatar-1.jpg" alt="">
+              <h4>Brittney Day</h4>
+              <p>CTO</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="./assets/images/avatar-2.jpg" alt="">
+              <h4>Kim Cervantes</h4>
+              <p>Marketing</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="./assets/images/avatar-3.jpg" alt="">
+              <h4>Massey Armstrong</h4>
+              <p>Customer care</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="./assets/images/avatar-4.jpg" alt="">
+              <h4>B.J. Petersen</h4>
+              <p>E-commerce</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="./assets/images/avatar-5.jpg" alt="">
+              <h4>Mayra Holman</h4>
+              <p>Customer care</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="./assets/images/avatar-6.jpg" alt="">
+              <h4>Gabriel Fisher</h4>
+              <p>Customer care</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="./assets/images/avatar-7.jpg" alt="">
+              <h4>Jose Holman</h4>
+              <p>Customer care</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Brands">
+    <div class="swiper">
+      <div class="container">
+        <div class="row">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/brand-1.svg" alt="Slide 1"></div>
+              <div class="swiper-slide"><img src="./assets/images/brand-2.svg" alt="Slide 1"></div>
+              <div class="swiper-slide"><img src="./assets/images/brand-3.svg" alt="Slide 1"></div>
+              <div class="swiper-slide"><img src="./assets/images/brand-4.svg" alt="Slide 1"></div>
+              <div class="swiper-slide"><img src="./assets/images/brand-5.svg" alt="Slide 1"></div>
+              <div class="swiper-slide"><img src="./assets/images/brand-6.svg" alt="Slide 1"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Choice">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <h2>At Varkala, we want the right choice to be as easy as putting on a great T-shirt</h2>
+        </div>
+        <div class="col-lg-5 ml">
+          <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
+            belly, slightly domed and divided by arches into stiff sections </p>
+        </div>
+        <div class="col-lg-5">
+          <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully
+            thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to
+            me?" he thought. It wasn't a dream. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <div class="content">
+              <h6>Free shipping & return</h6>
+              <p>Free Shipping over $300</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <i class="bi bi-currency-exchange"></i>
+            <div class="content">
+              <h6>Money back guarantee</h6>
+              <p>30 Days Money Back Guarantee</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <i class="bi bi-coin"></i>
+            <div class="content">
+              <h6>Best prices</h6>
+              <p>Always the best prices</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <i class="bi bi-person"></i>
+            <div class="content">
+              <h6>020-800-456-747</h6>
+              <p>24/7 Available Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h6>Be in touch</h6>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <br>At itaque temporibus.
+            </p>
+            <form action="">
+              <input type="text" placeholder="Your Email address">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </form>
+          </div>
+          <div class="col-lg-7">
+            <div class="col-lg-4">
+              <h6>Shop</h6>
+              <ul class="list">
+                <li class="list-item"> <a>For women</a></li>
+                <li class="list-item"><a> For men</a></li>
+                <li class="list-item"><a>Stores</a></li>
+                <li class="list-item"><a>Our Blog</a></li>
+                <li class="list-item"><a>Shop</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6>Company</h6>
+              <ul class="list">
+                <li class="list-item"><a>Login</a></li>
+                <li class="list-item"><a>Register</a></li>
+                <li class="list-item"><a>Wishlist</a></li>
+                <li class="list-item"><a>Our product</a></li>
+                <li class="list-item"><a>Checkouts</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6>Your account</h6>
+              <ul class="list">
+                <li class="list-item"><a>Login</a></li>
+                <li class="list-item"><a>Register</a></li>
+                <li class="list-item"><a>Wishlist</a></li>
+                <li class="list-item"><a>Our product</a></li>
+                <li class="list-item"><a>Checkouts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p> © 2020 Your company. All rights reserved. </p>
+          </div>
+          <div class="col-lg-8">
+            <p>Terms & Conditions</p>
+            <p>Privacy & cookies</p>
+            <p>Accessibility</p>
+            <p>Customer Data Promise</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: true,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+});
+</script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/basket.js"></script>
+<script src="./assets/js/drop.js"></script>
+<script src="./assets/js/"></script>
+
+</html>

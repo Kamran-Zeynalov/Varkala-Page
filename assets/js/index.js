@@ -29,4 +29,17 @@
     }, 0);
 })();
 
+var login = document.querySelector("#Login");
+var register = document.querySelector("#Register");
+var pageLogin = document.querySelector("#loginPage");
+var pageRegister = document.querySelector("#registerPage");
 
+login.addEventListener("click", function(){
+    pageRegister.style.display = "none";
+    pageLogin.style.display = "block";
+});
+
+register.addEventListener("click", function(){
+    pageLogin.style.display = "none";
+    pageRegister.style.display = "block";
+});

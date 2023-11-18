@@ -1,1 +1,270 @@
-/*# sourceMappingURL=about.css.map */
+#AboutUs,
+#History {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-top: 70px;
+}
+#AboutUs .line,
+#History .line {
+  width: 50%;
+  margin-top: 0.5rem;
+  border-top: solid 1px #495057;
+  padding-left: 15px;
+}
+#AboutUs h6,
+#History h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.5em;
+  color: #BCAC76;
+  margin-bottom: 15px;
+}
+#AboutUs h1,
+#AboutUs h2,
+#History h1,
+#History h2 {
+  font-weight: 700;
+  margin-bottom: 3rem;
+  font-size: 4.5rem;
+  line-height: 1.3;
+}
+#AboutUs p,
+#History p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #868e96;
+  line-height: 1.6;
+}
+
+#History {
+  padding-top: 1.5rem;
+}
+#History .row {
+  margin-bottom: 3rem;
+}
+#History img {
+  max-width: 100%;
+  height: auto;
+}
+#History .ml-6 {
+  margin-left: 6rem;
+}
+#History .col-md-6 {
+  display: flex;
+  align-items: center;
+}
+#History .col-md-6 h6 {
+  margin-bottom: 0.25rem;
+  color: #868e96;
+}
+#History .col-md-6 h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+#History .col-md-6 p {
+  color: #868e96;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+#Milestones {
+  background: #f8f9fa;
+}
+#Milestones .container {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+#Milestones .container .col-lg-5 h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+#Milestones .container .col-lg-5 p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #868e96;
+}
+#Milestones .container .col-lg-6 {
+  margin-left: auto;
+}
+#Milestones .container .col-lg-6 h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: monospace;
+  font-weight: 700;
+  line-height: 1.3;
+}
+#Milestones .container .col-lg-6 p {
+  color: #868e96;
+}
+
+#Founder {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+#Founder .col-lg-5 {
+  padding: 3rem;
+}
+#Founder .col-lg-5 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+#Founder .col-lg-6 blockquote {
+  padding-top: 1rem;
+  background-image: url(/about-assets/images/download.svg);
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+}
+#Founder .col-lg-6 blockquote p {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+#Founder .col-lg-6 blockquote h6 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #bcac76;
+}
+#Founder .col-lg-6 p {
+  color: #868e96;
+}
+
+#Team {
+  padding-bottom: 3rem;
+}
+#Team .line {
+  width: 50%;
+  margin-top: 0.5rem;
+  border-top: solid 1px #495057;
+  padding-left: 15px;
+}
+#Team h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.5em;
+  color: #BCAC76;
+  margin-bottom: 15px;
+}
+#Team h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 4.5rem;
+  line-height: 1.3;
+}
+#Team p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #868e96;
+  margin-bottom: 6rem;
+}
+#Team .col-lg-3 {
+  text-align: center;
+}
+#Team .col-lg-3 img {
+  margin-bottom: 1.5rem;
+  height: auto;
+  max-width: 80%;
+  border: #dee2e6;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: none;
+  line-height: 3rem;
+}
+#Team .col-lg-3 h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+#Team .col-lg-3 p {
+  color: #868e96;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+#Brands {
+  background: #f8f9fa;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#Brands .container {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+#Brands .container .swiper-container {
+  width: 1110px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Brands .container .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  width: 210px;
+  margin-right: 15px;
+}
+#Brands .container .swiper-container .swiper-slide img {
+  width: 100px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.7;
+}
+#Brands .container .swiper-container .swiper-pagination {
+  bottom: 10px;
+  text-align: center;
+  z-index: 10;
+}
+#Brands .container .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  margin: 0 5px;
+  background-color: #888;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+#Brands .container .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #bcac76;
+  transform: scale(1.5);
+}
+
+#Choice {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+#Choice .col-lg-10 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#Choice .col-lg-10 h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+#Choice .ml {
+  margin-left: 8%;
+}
+#Choice .col-lg-5 {
+  color: #868e96;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=about.css.map */

@@ -124,6 +124,11 @@ header {
                 &:hover {
                     color: black;
                 }
+
+                i{
+                    transition: .4s;
+                    transform: rotateZ(0deg);
+                }
             }
         }
 
@@ -229,7 +234,6 @@ header {
     overflow: hidden;
     width: 100%;
     height: 100%;
-
     .title {
         color: black;
         font-weight: 600;
@@ -607,11 +611,13 @@ header {
                         position: relative;
                         transition: .3s;
                         list-style: none;
+
                         li {
                             padding: 8px 16px 8px 0;
                             align-items: center;
                             cursor: pointer;
-                            i{
+
+                            i {
                                 font-size: 12px;
                             }
                         }
@@ -708,6 +714,578 @@ header {
                     }
 
                 }
+            }
+        }
+    }
+
+}
+
+#static {
+    width: 100%;
+    margin-top: 30px;
+
+    .modal-header {
+        padding-top: 35px;
+        padding-right: 30px;
+        border-bottom: none;
+    }
+
+    #SideBasket {
+        display: flex;
+        justify-content: center;
+
+        .modal-dialog {
+            width: 100%;
+
+            .modal-header {
+                border-bottom: none;
+
+                button {
+                    margin-top: 5px;
+                    margin-right: 10px;
+                    font-size: 20px;
+                    transition: .2s;
+                    font-weight: 200;
+
+                    &:hover {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+
+            .sidebar-body {
+                padding: 16px 48px 0 48px;
+                position: relative;
+
+                h5 {
+                    font-size: 27px;
+                    font-weight: bolder;
+                    padding-bottom: 28px;
+                    overflow: hidden;
+                    border-bottom: 1px solid lightgray;
+
+                    span {
+                        color: gray;
+                        display: inline-block;
+                        margin: 0 10px;
+                        transition: .1s;
+                        cursor: pointer;
+                        &:hover {
+                            color: black;
+                        }
+                    }
+
+                    #Login {
+                        color: #bcac76;
+                    }
+                }
+
+                .loginPage {
+                    margin-top: 20px;
+                    .text {
+                        color: gray;
+                    }
+
+                    form {
+                        .inputs {
+                            .inp {
+                                input {
+                                    border: 1px solid lightgray;
+                                    outline: none;
+                                    width: 100%;
+                                    padding: 6px 10px;
+                                    margin: 0 auto;
+                                }
+
+                                font-size: 19px;
+                                font-weight: bold;
+                            }
+
+                            label {
+                                width: 100%;
+
+                                p {
+                                    input {
+                                        border: 1px solid lightgray;
+                                        outline: none;
+                                        width: 100%;
+                                        padding: 6px 10px;
+                                        margin: 0 auto;
+                                    }
+
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    padding: 0;
+                                    margin-bottom: 10px;
+                                }
+
+                            }
+
+                            .passs {
+                                margin-top: 10px;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .forgot {
+                                    display: inline-block;
+                                    padding: 0;
+
+                                    &:nth-child(2) {
+                                        color: #9a884b;
+                                        font-size: 15px;
+                                        font-weight: 400;
+
+                                        &:hover {
+                                            border-bottom: 1px solid #9a884b;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .check {
+                                color: gray;
+                                margin: 5px 0 20px 0;
+                                cursor: pointer;
+                            }
+
+                            button {
+                                width: 100%;
+                                background-color: white;
+                                border: 1px solid black;
+                                padding: 7px 0;
+                                margin-bottom: 20px;
+                                transition: .2s;
+
+                                &:hover {
+                                    background-color: black;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .line {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .line {
+                                width: 45%;
+                                height: 1px;
+                                background-color: lightgray;
+                            }
+
+                            p {
+                                color: gray;
+                                letter-spacing: 2px;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .icons {
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 5px;
+                            margin-bottom: 50px;
+
+                            i {
+                                width: 43px;
+                                height: 42px;
+                                text-align: center;
+                                padding: 12px;
+                                margin-left: 6px;
+                                border: 1px solid #bcac76;
+                                color: #bcac76;
+                                transition: .4s;
+
+                                &:hover {
+                                    color: black;
+                                    background-color: #9a884b;
+                                }
+
+                                &:nth-child(2) {
+                                    border-color: lightgray;
+                                    color: gray;
+
+                                    &:hover {
+                                        color: white;
+                                        background-color: gray;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #registerPage
+                {
+                    display: none;
+                }
+
+                .registerPage {
+                    margin-top: 20px;
+
+                    .text {
+                        color: gray;
+                    }
+
+                    form {
+                        .inputs {
+                            .inp {
+                                input {
+                                    border: 1px solid lightgray;
+                                    outline: none;
+                                    width: 100%;
+                                    padding: 6px 10px;
+                                    margin: 0 auto;
+                                }
+
+                                font-size: 19px;
+                                font-weight: bold;
+                            }
+
+                            label {
+                                width: 100%;
+
+                                p {
+                                    input {
+                                        border: 1px solid lightgray;
+                                        outline: none;
+                                        width: 100%;
+                                        padding: 6px 10px;
+                                        margin: 0 auto;
+                                    }
+
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    padding: 0;
+                                    margin-bottom: 10px;
+                                }
+
+                            }
+
+                            .passs {
+                                margin-top: 10px;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .forgot {
+                                    display: inline-block;
+                                    padding: 0;
+
+                                    &:nth-child(2) {
+                                        color: #9a884b;
+                                        font-size: 15px;
+                                        font-weight: 400;
+
+                                        &:hover {
+                                            border-bottom: 1px solid #9a884b;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .check {
+                                color: gray;
+                                margin: 5px 0 20px 0;
+                                cursor: pointer;
+                            }
+
+                            button {
+                                width: 100%;
+                                background-color: white;
+                                border: 1px solid black;
+                                padding: 7px 0;
+                                margin-bottom: 20px;
+                                transition: .2s;
+
+                                &:hover {
+                                    background-color: black;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .line {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .line {
+                                width: 45%;
+                                height: 1px;
+                                background-color: lightgray;
+                            }
+
+                            p {
+                                color: gray;
+                                letter-spacing: 2px;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .icons {
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 5px;
+                            margin-bottom: 50px;
+
+                            i {
+                                width: 43px;
+                                height: 42px;
+                                text-align: center;
+                                padding: 12px;
+                                margin-left: 6px;
+                                border: 1px solid #bcac76;
+                                color: #bcac76;
+                                transition: .4s;
+
+                                &:hover {
+                                    color: black;
+                                    background-color: #9a884b;
+                                }
+
+                                &:nth-child(2) {
+                                    border-color: lightgray;
+                                    color: gray;
+
+                                    &:hover {
+                                        color: white;
+                                        background-color: gray;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#stat {
+    width: 100%;
+
+    .modal-header {
+        padding-right: 30px;
+        border-bottom: none;
+    }
+
+    .modal-dialog{
+        max-width: 1300px; 
+
+    }
+    #SideBasket {
+        display: flex;
+        justify-content: center;
+
+        .modal-dialog {
+            width: 100%;
+
+            .modal-header {
+                border-bottom: none;
+
+                button {
+                    // margin-top: 5px;
+                    margin-right: 10px;
+                    font-size: 20px;
+                    transition: .2s;
+                    font-weight: 200;
+
+                    &:hover {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+
+            .sidebar-body {
+                padding: 16px 48px 0 48px;
+                position: relative;
+
+            
+
+  .modal-body img {
+    width: 538px;
+    max-height: 538px;
+    object-fit: cover;
+  }
+
+  .additional-info {
+    padding: 20px;
+  }
+
+  .slider-nav {
+    padding-top: 10px;
+  }
+
+
+
+
+  .slider-for img,
+  .slider-nav img {
+    visibility: visible;
+    max-width: 100%;
+   height: auto !important;
+   object-fit: contain;
+  }
+
+  .slider-nav img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .col-lg-6 h2 {
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    color: #212529;
+  }
+
+  .text-primary {
+    color: #bcac76 !important;
+  }
+
+  .text-gray-300 {
+    color: #dee2e6;
+  }
+
+  .text-uppercase {
+    letter-spacing: 0.15em;
+  }
+
+  .detail-option-heading span {
+    color: #adb5bd;
+    font-family: "vremenagrotesk", sans-serif;
+    font-size: .8rem;
+    font-weight: normal;
+  }
+
+  .detail-quantity {
+    max-width: 5rem;
+    text-align: center;
+    color: #212529;
+    border-radius: 0;
+    border-color: #212529;
+  }
+
+  .btn-dark {
+    border-radius: 0;
+  }
+
+  a {
+    color: #bcac76;
+  }
+
+  a:hover {
+    color: #817241;
+  }
+
+
+  .fab:hover {
+    color: #817241;
+  }
+
+  .detail-option-btn-label {
+    color: #bcac76;
+    border-color: #bcac76;
+  }
+
+  .detail-option-btn-label:hover {
+    color: #212529;
+    background-color: #a89454;
+    border-color: #a89454;
+  }
+
+  .input-invisible {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .btn {
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .detail-option .btn-selectpicker {
+    background-color: #fff;
+    color: #495057;
+    border: 1px solid #ced4da;
+  }
+
+  .detail-option-btn-label {
+    margin-right: 10px;
+  }
+
+  .detail-quantity {
+    border: 1px solid #ced4da;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .btn-dark {
+    padding: 12px;
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #343a40;
+  }
+
+  .btn-dark:hover {
+    background-color: #23272b;
+    border: 1px solid #23272b;
+  }
+
+  .text-hover-primary:hover {
+    color: #007bff;
+  }
+
+  .detail-option .btn-selectpicker {
+    display: none;
+  }
+
+
+  select {
+    border: 1px solid #ced4da;
+    width: 220px;
+    padding: 9px 12px;
+    color: #495057;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    outline: none;
+  }
+
+  .btn-selectpicker {
+    border-color: #817241;
+  }
+
+  .filter-option {
+    height: 100px;
+  }
+
+  .fresh {
+    background-color: #a89454;
+    color: #343a40;
+    padding: 2px 6px 6px 6px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    z-index: 100;
+    font-size: 14px;
+  }
+
+  .sale {
+    background-color: #23272b;
+    color: white;
+    padding: 4px 6px 6px 6px;
+    position: absolute;
+    top: 65px;
+    left: 25px;
+    z-index: 100;
+  }
             }
         }
     }
