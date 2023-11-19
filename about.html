@@ -106,11 +106,11 @@
           <ul>
             <li>
               <div id="homeDro" class="homeDro">
-                <p>Home 1 - Fashion</p>
-                <p>Home 2 - Fashion</p>
-                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
-                <p>Home 4 - Design <span> New</span></p>
-              </div>
+                <p><a href="./index.html" style="color: black; text-decoration: none;">Home</a></p>
+                <p><a href="./blog.html" style="color: black; text-decoration: none;">Blog</a></p>
+                <p><a href="./about.html" style="color: black; text-decoration: none;">About</a><span>New</span></p>
+                <p><a href="./contact.html" style="color: black; text-decoration: none;">Contact</a><span>New</span></p>
+            </div>
             </li>
           </ul>
         </li>
@@ -372,8 +372,8 @@
     <div id="homeDrop" class="homeDrop animate__animated">
       <p><a href="./index.html" style="color: black; text-decoration: none;">Home</a></p>
       <p><a href="./blog.html" style="color: gray; text-decoration: none;">Blog</a></p>
-      <p><a href="./about.html" style="color: gray; text-decoration: none;">About</a></p>
-      <p><a href="./contact.html" style="color: gray; text-decoration: none;">Contact</a></p>
+      <p><a href="./about.html" style="color: gray; text-decoration: none;">About</a><span>New</span></p>
+      <p><a href="./contact.html" style="color: gray; text-decoration: none;">Contact</a><span>New</span></p>
 
     </div>
 
@@ -714,7 +714,7 @@
         <div class="col-xl-2 d-md-none d-sm-none">
           <div class="line"></div>
         </div>
-        <div class="col-xl-10 col-12">
+        <div class="col-12">
           <h6>OUR TEAM</h6>
           <h1>People</h1>
           <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering
@@ -977,10 +977,10 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 'auto',
+       slidesPerView: "auto",
       centeredSlides: true,
       loop: true,
-      spaceBetween: 0,
+      spaceBetween: 5,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

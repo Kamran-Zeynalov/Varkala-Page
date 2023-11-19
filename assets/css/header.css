@@ -47,6 +47,11 @@ header .header {
 header .right {
   padding-right: 25px;
 }
+@media screen and (max-width: 600px) {
+  header .right {
+    display: none !important;
+  }
+}
 header .social-media {
   margin-left: 15px;
 }

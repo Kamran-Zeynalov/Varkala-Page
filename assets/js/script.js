@@ -1,20 +1,19 @@
 $(document).ready(function () {
   $(".phoneList").click(function () {
-      $("#responsiveList").slideToggle();
+    $("#responsiveList").slideToggle();
   });
 
   $(".myLi").click(function () {
-      $(".myLi").not(this).find("li div").slideUp();
-      $(this).find("li div").slideToggle();
+    $(".myLi").not(this).find("li div").slideUp();
+    $(this).find("li div").slideToggle();
   });
 
-  $(".dropbtn").click(function() {
+  $(".dropbtn").click(function () {
     var content = $(this).next(".dropdown-content");
-    
+
     $(".dropdown-content").not(content).slideUp();
     content.slideToggle();
-});
-
+  });
 });
 
 $(".faqTitle").click(function () {
@@ -28,14 +27,13 @@ $(".faqTitle").click(function () {
   }
 });
 
-
 var myListElements = document.querySelectorAll(".myList");
 var dropElements = [
   document.getElementById("homeDrop"),
   document.getElementById("shopDown"),
   document.getElementById("iconsDown"),
   document.getElementById("pagesDown"),
-  document.getElementById("docsDrop")
+  document.getElementById("docsDrop"),
 ];
 
 function handleClick(index) {
@@ -88,15 +86,12 @@ var register = document.querySelector("#Register");
 var pageLogin = document.querySelector("#loginPage");
 var pageRegister = document.querySelector("#registerPage");
 
-login.addEventListener("click", function(){
-    pageRegister.style.display = "none";
-    pageLogin.style.display = "block";
+login.addEventListener("click", function () {
+  pageRegister.style.display = "none";
+  pageLogin.style.display = "block";
 });
 
-register.addEventListener("click", function(){
-    pageLogin.style.display = "none";
-    pageRegister.style.display = "block";
+register.addEventListener("click", function () {
+  pageLogin.style.display = "none";
+  pageRegister.style.display = "block";
 });
-
-
-

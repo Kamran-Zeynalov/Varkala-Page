@@ -62,6 +62,10 @@ header {
 
     .right {
         padding-right: 25px;
+
+        @media screen and (max-width:600px) {
+            display: none !important;
+        }
     }
 
     .social-media {
@@ -100,6 +104,7 @@ header {
         cursor: pointer;
         color: #343a40;
     }
+
     .dropdown-content {
         display: none;
         position: absolute;
@@ -110,6 +115,7 @@ header {
         border-radius: 12px;
         overflow: auto;
         border: 1px solid lightgray;
+
         a {
             width: 100%;
             text-align: center;
@@ -120,11 +126,13 @@ header {
             display: block;
             transition: .4s;
             font-size: 12px;
-            &:hover{
+
+            &:hover {
                 color: black;
             }
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
             right: 20px;
         }
     }
@@ -293,6 +301,7 @@ header {
                     padding: 0 !important;
                     justify-content: center;
                     width: 100%;
+
                     .input-basket {
                         .myList {
                             position: relative;
@@ -456,6 +465,7 @@ header {
 
 #responsiveList {
     display: none;
+
     @media screen and (max-width:990px) {
         display: none;
         width: 100%;
@@ -492,22 +502,23 @@ header {
                         transition: .4s;
                         transform: rotateZ(0deg);
                     }
+
                     .title {
                         color: black;
                         font-weight: 600;
                     }
-                
+
                     p {
                         font-weight: 500;
                         color: gray;
                         font-size: 14px;
                         line-height: 14px;
                         cursor: pointer;
-                
+
                         &:hover {
                             color: black;
                         }
-                
+
                         span {
                             display: inline-block;
                             margin-left: 12px;
@@ -518,35 +529,36 @@ header {
                             color: #bcac76;
                             font-weight: 700;
                         }
-                
+
                         a {
                             text-decoration: none;
                             color: gray;
-                
+
                             &:hover {
                                 color: black;
                             }
                         }
                     }
-                
+
                     #homeDro {
                         display: none;
                     }
-                
+
                     .homeDro {
                         background-color: white;
                         padding: 0 0;
                     }
-                
+
                     #shopDow {
                         display: none;
                     }
-                
+
                     .shopDown {
                         background-color: white;
-            
+
                     }
-                    .shoppp{
+
+                    .shoppp {
                         display: flex;
                         justify-content: space-between;
                         padding-right: 30px;
