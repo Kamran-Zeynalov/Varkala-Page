@@ -5,8 +5,16 @@
   left: -450px;
 }
 
+@media screen and (max-width: 1240px) {
+  .leke {
+    width: 600px;
+    top: -200px;
+    left: -300px;
+    z-index: -1;
+  }
+}
 #Slider {
-  margin-top: 120px;
+  margin-top: 80px;
 }
 #Slider .swiper-slide .title-text-button {
   position: relative;
@@ -58,6 +66,119 @@
   z-index: 2;
   margin-left: 100px;
   width: 50%;
+}
+@media screen and (max-width: 990px) {
+  #Slider .swiper-slide {
+    padding-bottom: 50px;
+  }
+  #Slider .swiper-slide .title-text-button {
+    position: relative;
+    z-index: 1;
+    left: 70px !important;
+  }
+  #Slider .swiper-slide .title-text-button .back {
+    display: none;
+    width: 330px;
+    position: absolute;
+    top: -110px;
+    display: none;
+    left: 240px;
+  }
+  #Slider .swiper-slide .title-text-button h3 {
+    font-size: 15px !important;
+    font-weight: 400;
+    width: 100%;
+    margin-right: 300px !important;
+    text-transform: uppercase;
+  }
+  #Slider .swiper-slide .title-text-button h1 {
+    font-size: 30px !important;
+    margin: 19px 0;
+    width: 100%;
+    line-height: 33px;
+  }
+  #Slider .swiper-slide .title-text-button p {
+    margin: 19px 0;
+    width: 100% !important;
+    font-weight: 600;
+    font-size: 13px !important;
+    color: gray;
+  }
+  #Slider .swiper-slide .title-text-button button {
+    margin-top: 10px;
+    padding: 5px 18px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #bcac76;
+    color: #bcac76;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  #Slider .swiper-slide .title-text-button button:hover {
+    background-color: #bcac76;
+    color: black;
+  }
+  #Slider .swiper-slide .image img {
+    position: relative;
+    z-index: 2;
+    margin-left: 30px !important;
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 1233px) {
+  #Slider .swiper-slide {
+    padding-bottom: 50px;
+  }
+  #Slider .swiper-slide .title-text-button {
+    position: relative;
+    z-index: 1;
+    top: 70px;
+    left: 180px;
+    margin-bottom: 70px;
+  }
+  #Slider .swiper-slide .title-text-button .back {
+    width: 330px;
+    position: absolute;
+    top: -80px;
+    left: 440px;
+  }
+  #Slider .swiper-slide .title-text-button h3 {
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  #Slider .swiper-slide .title-text-button h1 {
+    font-size: 40px;
+    margin: 19px 0;
+    width: 90%;
+    line-height: 30px;
+  }
+  #Slider .swiper-slide .title-text-button p {
+    margin: 19px 0;
+    width: 90%;
+    font-weight: 600;
+    color: gray;
+  }
+  #Slider .swiper-slide .title-text-button button {
+    margin-top: 10px;
+    padding: 5px 18px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #bcac76;
+    color: #bcac76;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  #Slider .swiper-slide .title-text-button button:hover {
+    background-color: #bcac76;
+    color: black;
+  }
+  #Slider .swiper-slide .image img {
+    position: relative;
+    z-index: 2;
+    margin-left: 100px;
+    width: 50%;
+  }
 }
 
 #Choices {
@@ -158,6 +279,11 @@
   padding: 20px 0;
   position: relative;
 }
+@media screen and (max-width: 990px) {
+  #DealOfWeak .leke {
+    display: none;
+  }
+}
 #DealOfWeak .leke {
   width: 900px;
   position: absolute;
@@ -247,6 +373,11 @@
 #DealOfWeak .image {
   margin-left: 20px;
 }
+@media screen and (max-width: 990px) {
+  #DealOfWeak .image {
+    text-align: center;
+  }
+}
 #DealOfWeak .image img {
   width: 300px;
 }
@@ -276,6 +407,12 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 990px) {
+  #Arrivals .filter ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 #Arrivals .filter ul .active {
   color: black;
@@ -414,6 +551,18 @@
 #Summer {
   position: relative;
 }
+@media screen and (max-width: 991px) {
+  #Summer .leke {
+    display: none;
+  }
+  #Summer .summer-discount h1 {
+    font-size: 50px !important;
+    font-weight: bold;
+  }
+  #Summer .summer-discount h5 {
+    font-size: 25px !important;
+  }
+}
 #Summer .leke {
   width: 600px;
   position: absolute;
@@ -457,6 +606,11 @@
   width: 249px;
   top: -50px;
   right: 180px;
+}
+@media screen and (max-width: 991px) {
+  #Summer .image {
+    display: none;
+  }
 }
 #Summer .image img {
   width: 100%;

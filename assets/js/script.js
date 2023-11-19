@@ -1,3 +1,25 @@
+$(document).ready(function () {
+  $(".phoneList").click(function () {
+      $("#responsiveList").slideToggle();
+  });
+
+  $(".myLi").click(function () {
+      $(".myLi").not(this).find("li div").slideUp();
+      $(this).find("li div").slideToggle();
+  });
+});
+
+$(".faqTitle").click(function () {
+  let $icon = $(this).find("i");
+  $icon.toggleClass("active");
+  $(this).next().slideToggle();
+
+  if ($icon.hasClass("active")) {
+    $(".faqInfo").not($info).slideUp();
+    $(".faqTitle i").not($icon).removeClass("active");
+  }
+});
+
 
 var myListElements = document.querySelectorAll(".myList");
 var dropElements = [
@@ -51,6 +73,21 @@ document.body.addEventListener("click", function (event) {
 myListElements.forEach((element, index) => {
   element.removeEventListener("click", handleClick(index));
   element.addEventListener("click", handleClick(index));
+});
+
+var login = document.querySelector("#Login");
+var register = document.querySelector("#Register");
+var pageLogin = document.querySelector("#loginPage");
+var pageRegister = document.querySelector("#registerPage");
+
+login.addEventListener("click", function(){
+    pageRegister.style.display = "none";
+    pageLogin.style.display = "block";
+});
+
+register.addEventListener("click", function(){
+    pageLogin.style.display = "none";
+    pageRegister.style.display = "block";
 });
 
 

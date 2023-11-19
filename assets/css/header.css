@@ -34,6 +34,16 @@ header .header {
   position: relative;
   z-index: 2;
 }
+@media screen and (max-width: 1240px) {
+  header .header .left {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  header .header .right {
+    display: none;
+  }
+}
 header .right {
   padding-right: 25px;
 }
@@ -88,14 +98,17 @@ header input::-moz-placeholder {
 header input::placeholder {
   color: #b6bdc4;
 }
-header .lists {
+header .container-fluid {
+  width: 100%;
+}
+header .container-fluid .lists {
   margin-top: 30px;
 }
-header .lists ul {
+header .container-fluid .lists ul {
   display: flex;
   list-style: none;
 }
-header .lists ul li {
+header .container-fluid .lists ul li {
   z-index: 10000;
   cursor: pointer;
   padding: 0 12px;
@@ -103,17 +116,17 @@ header .lists ul li {
   font-weight: 600;
   text-decoration: none;
 }
-header .lists ul li .active {
+header .container-fluid .lists ul li .active {
   color: black;
 }
-header .lists ul li:hover {
+header .container-fluid .lists ul li:hover {
   color: black;
 }
-header .lists ul li i {
+header .container-fluid .lists ul li i {
   transition: 0.4s;
   transform: rotateZ(0deg);
 }
-header .lists .home-list {
+header .container-fluid .lists .home-list {
   display: none;
   position: relative;
   left: 100px;
@@ -122,7 +135,7 @@ header .lists .home-list {
   background-color: white;
   padding: 12px 0 12px 48px;
 }
-header .lists .home-list li {
+header .container-fluid .lists .home-list li {
   display: flex;
   padding: 7px 0;
   position: relative;
@@ -130,46 +143,52 @@ header .lists .home-list li {
   font-weight: 600;
   color: #868e96;
 }
-header .input-basket {
+header .container-fluid .otherDiv {
+  display: none;
+}
+header .container-fluid .input-basket {
   display: flex;
   justify-content: space-between;
   margin: 30px 50px 0 50px;
 }
-header .input-basket .search {
+header .container-fluid .input-basket .search {
   padding: 5px;
   margin-top: 6px;
   border-bottom: 1px solid lightgray;
   transition: 0.4s;
 }
-header .input-basket .search input {
+header .container-fluid .input-basket .search input {
   border: none;
   outline: none;
   background-color: transparent;
 }
-header .input-basket .search i {
+header .container-fluid .input-basket .search i {
   font-size: 18px;
 }
-header .input-basket .search:hover {
+header .container-fluid .input-basket .search:hover {
   border-bottom: 1px solid black;
 }
-header .input-basket .person-basket .person {
+header .container-fluid .input-basket .person-basket .person {
   font-size: 26px;
 }
-header .input-basket .person-basket .basket {
+header .container-fluid .input-basket .person-basket .phoneList {
+  display: none;
+}
+header .container-fluid .input-basket .person-basket .basket {
   font-size: 22px;
 }
-header .input-basket .person-basket .menu {
+header .container-fluid .input-basket .person-basket .menu {
   font-size: 26px;
 }
-header .input-basket .person-basket i {
+header .container-fluid .input-basket .person-basket i {
   padding: 0 6px;
   font-size: 22px;
   transition: 0.3s;
 }
-header .input-basket .person-basket i:hover {
+header .container-fluid .input-basket .person-basket i:hover {
   color: #bcac76;
 }
-header .input-basket .person-basket span {
+header .container-fluid .input-basket .person-basket span {
   position: absolute;
   display: inline-block;
   width: 20px;
@@ -180,11 +199,244 @@ header .input-basket .person-basket span {
   font-size: 11px;
   background-color: #bcac76;
 }
-header .input-basket .person-basket .wishlist {
+header .container-fluid .input-basket .person-basket .wishlist {
   right: 142px;
 }
-header .input-basket .person-basket .baskett {
+header .container-fluid .input-basket .person-basket .baskett {
   right: 103px;
+}
+@media screen and (max-width: 990px) {
+  header .container-fluid .row {
+    justify-content: center;
+    width: 100%;
+  }
+  header .container-fluid .row .lists ul .myList {
+    display: none;
+  }
+  header .container-fluid .row .otherDiv {
+    display: block;
+    display: flex;
+    padding: 0 !important;
+    justify-content: center;
+    width: 100%;
+  }
+  header .container-fluid .row .otherDiv .input-basket .myList {
+    position: relative;
+    text-align: center;
+  }
+  header .container-fluid .row .otherDiv .input-basket .myList span {
+    right: -4px;
+  }
+  header .container-fluid .row .otherDiv .input-basket .myList .wishlist {
+    right: 29px;
+  }
+  header .container-fluid .row .baseDiv .input-basket {
+    justify-content: end;
+  }
+  header .container-fluid .row .baseDiv .input-basket .search {
+    display: none;
+  }
+  header .container-fluid .row .baseDiv .input-basket .phoneList {
+    display: block;
+  }
+  header .container-fluid .row .baseDiv .input-basket .myList .person,
+  header .container-fluid .row .baseDiv .input-basket .myList .bi-heart,
+  header .container-fluid .row .baseDiv .input-basket .myList .bi-basket,
+  header .container-fluid .row .baseDiv .input-basket .myList .bi-person,
+  header .container-fluid .row .baseDiv .input-basket .myList .baseList,
+  header .container-fluid .row .baseDiv .input-basket .myList span {
+    display: none;
+  }
+}
+@media screen and (max-width: 1233px) {
+  header .container-fluid .lists {
+    margin-top: 30px;
+  }
+  header .container-fluid .lists ul li {
+    z-index: 10000;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  header .container-fluid .lists ul li .active {
+    color: black;
+  }
+  header .container-fluid .lists ul li:hover {
+    color: black;
+  }
+  header .container-fluid .lists ul li i {
+    transition: 0.4s;
+    transform: rotateZ(0deg);
+  }
+  header .container-fluid .input-basket {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px 0 10px;
+  }
+  header .container-fluid .input-basket .search {
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+    transition: 0.4s;
+  }
+  header .container-fluid .input-basket .search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  header .container-fluid .input-basket .search i {
+    font-size: 14px;
+  }
+  header .container-fluid .input-basket .search:hover {
+    border-bottom: 1px solid black;
+  }
+  header .container-fluid .input-basket .person-basket {
+    position: relative;
+  }
+  header .container-fluid .input-basket .person-basket .person {
+    font-size: 17px;
+  }
+  header .container-fluid .input-basket .person-basket .basket {
+    font-size: 22px;
+  }
+  header .container-fluid .input-basket .person-basket .menu {
+    font-size: 26px;
+  }
+  header .container-fluid .input-basket .person-basket i {
+    padding: 0 6px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  header .container-fluid .input-basket .person-basket i:hover {
+    color: #bcac76;
+  }
+  header .container-fluid .input-basket .person-basket span {
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 11px;
+    background-color: #bcac76;
+  }
+  header .container-fluid .input-basket .person-basket .wishlist {
+    right: 60px;
+  }
+  header .container-fluid .input-basket .person-basket .baskett {
+    right: 30px;
+  }
+}
+
+#responsiveList {
+  display: none;
+}
+@media screen and (max-width: 990px) {
+  #responsiveList {
+    display: none;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+  }
+  #responsiveList .lists {
+    margin-top: 30px;
+    z-index: 102;
+  }
+  #responsiveList .lists ul {
+    list-style: none;
+  }
+  #responsiveList .lists ul li {
+    color: black;
+    z-index: 10000;
+    cursor: pointer;
+    padding: 6px 0;
+    font-size: 13px;
+    color: black !important;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  #responsiveList .lists ul li .active {
+    color: black;
+  }
+  #responsiveList .lists ul li:hover {
+    color: black;
+  }
+  #responsiveList .lists ul li i {
+    font-size: 10px;
+    transition: 0.4s;
+    transform: rotateZ(0deg);
+  }
+  #responsiveList .lists ul li .title {
+    color: black;
+    font-weight: 600;
+  }
+  #responsiveList .lists ul li p {
+    font-weight: 500;
+    color: gray;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+  }
+  #responsiveList .lists ul li p:hover {
+    color: black;
+  }
+  #responsiveList .lists ul li p span {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 10px;
+    background-color: #f7f5ef;
+    color: #bcac76;
+    font-weight: 700;
+  }
+  #responsiveList .lists ul li p a {
+    text-decoration: none;
+    color: gray;
+  }
+  #responsiveList .lists ul li p a:hover {
+    color: black;
+  }
+  #responsiveList .lists ul li #homeDro {
+    display: none;
+  }
+  #responsiveList .lists ul li .homeDro {
+    background-color: white;
+    padding: 0 0;
+  }
+  #responsiveList .lists ul li #shopDow {
+    display: none;
+  }
+  #responsiveList .lists ul li .shopDown {
+    background-color: white;
+  }
+  #responsiveList .lists ul li .shoppp {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+  #responsiveList .search {
+    padding: 5px 12px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    transition: 0.4s;
+  }
+  #responsiveList .search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  #responsiveList .search i {
+    font-size: 15px;
+  }
+  #responsiveList .search:hover {
+    border-bottom: 1px solid black;
+  }
 }
 
 #dropDown {
@@ -193,6 +445,11 @@ header .input-basket .person-basket .baskett {
   overflow: hidden;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 990px) {
+  #dropDown {
+    display: none;
+  }
 }
 #dropDown .title {
   color: black;
@@ -483,6 +740,16 @@ header .input-basket .person-basket .baskett {
 }
 #staticBack #SideBasket .modal-dialog {
   width: 100%;
+}
+@media screen and (max-width: 990px) {
+  #staticBack #SideBasket .modal-dialog {
+    max-width: 100%;
+    max-height: 200px;
+    height: 100%;
+  }
+  #staticBack #SideBasket .modal-dialog .sidebar-body {
+    display: none;
+  }
 }
 #staticBack #SideBasket .modal-dialog .sidebar-body {
   padding: 16px 48px;

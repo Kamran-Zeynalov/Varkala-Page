@@ -8,22 +8,75 @@
   background-color: #f2f3f7;
   z-index: 0;
 }
-#Hero .circle {
+@media screen and (max-width: 700px) {
+  #Hero .circle-paralax {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #Hero .circle-paralax .circle {
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #bbd5e4;
+  }
+  #Hero .circle-paralax .paralax {
+    position: absolute;
+    top: -40px !important;
+    z-index: 1;
+    width: 100% !important;
+    transform: scale(1.2) !important;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+  #Hero .circle-paralax {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #Hero .circle-paralax .circle {
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #bbd5e4;
+  }
+  #Hero .circle-paralax .paralax {
+    position: absolute;
+    top: -40px !important;
+    z-index: 1;
+    width: 100% !important;
+    transform: scale(1.2) !important;
+  }
+}
+#Hero .circle-paralax {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#Hero .circle-paralax .circle {
   position: absolute;
-  top: 170px;
-  left: 490px;
   z-index: 1;
   width: 600px;
   height: 600px;
   border-radius: 50%;
   background-color: #bbd5e4;
 }
-#Hero .paralax {
+#Hero .circle-paralax .paralax {
   position: absolute;
-  top: 50px;
-  left: 560px;
+  top: -190px;
   z-index: 1;
   width: 29%;
+  transform: scale(1.2);
 }
 #Hero p {
   display: flex;
@@ -32,7 +85,7 @@
   font-size: 0.875rem;
   color: #868e96;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 #Hero p .gold {
   font-weight: bold;

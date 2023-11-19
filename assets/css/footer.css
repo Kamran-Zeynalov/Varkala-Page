@@ -1,90 +1,98 @@
-footer .footer {
+.footer {
   margin-top: 50px;
   background-color: #f8f9fa;
 }
-footer .footer .row {
+.footer .row {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-footer .footer .col-lg-3 {
+.footer .col-lg-3 {
   display: flex;
   align-items: center;
 }
-footer .footer .col-lg-3 i {
+.footer .col-lg-3 i {
   padding-right: 10px;
   font-size: 25px;
   padding-bottom: 15px;
   color: #676c73;
 }
-footer .footer .col-lg-3 h6 {
+.footer .col-lg-3 h6 {
   font-weight: bolder;
   font-size: 14px;
 }
-footer .footer .col-lg-3 p {
+.footer .col-lg-3 p {
   font-weight: light;
   color: #868e96;
   font-size: 14px;
 }
-footer .footer1 {
+
+.footer1 {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-footer .footer1 .row h6 {
+.footer1 .row h6 {
   font-weight: bolder;
   letter-spacing: 1.2px;
   font-size: 17px;
   margin-bottom: 20px;
 }
-footer .footer1 .row p {
+.footer1 .row p {
   color: #868e96;
   font-weight: bold;
   font-size: 14px;
 }
-footer .footer1 .row form {
+.footer1 .row .form {
   position: relative;
-}
-footer .footer1 .row input {
-  position: relative;
-  border: none;
   border-bottom: 1px solid #cbced1;
-  height: 45px;
-  width: 308px;
-  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-footer .footer1 .row input:hover {
+.footer1 .row .form form {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  margin-bottom: 0;
+}
+.footer1 .row .form input {
+  border: none;
+  height: 45px;
+  width: 90%;
+  transition: 0.3s;
+  outline: none;
+}
+.footer1 .row .form:hover {
   cursor: pointer;
   border-bottom: 1px solid black;
 }
-footer .footer1 .row i {
+.footer1 .row .form i {
   font-size: 28px;
-  position: absolute;
-  top: 10px;
-  left: 280px;
   color: #6c7277;
 }
-footer .footer1 .row i:hover {
+.footer1 .row .form i:hover {
   cursor: pointer;
 }
-footer .footer1 .row .col-lg-7 {
+.footer1 .row .col-lg-7 {
   display: flex;
 }
-footer .footer1 .row .col-lg-7 ul {
+.footer1 .row .col-lg-7 ul {
   padding: 0;
   font-weight: 500;
   line-height: 30px;
   font-size: 15px;
   position: relative;
 }
-footer .footer1 .row .col-lg-7 ul li {
+.footer1 .row .col-lg-7 ul li {
   list-style: none;
   color: #868e96;
   position: relative;
 }
-footer .footer1 .row .col-lg-7 ul li a {
+.footer1 .row .col-lg-7 ul li a {
   padding-bottom: 2px;
   position: relative;
 }
-footer .footer1 .row .col-lg-7 ul li a::before {
+.footer1 .row .col-lg-7 ul li a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -94,27 +102,128 @@ footer .footer1 .row .col-lg-7 ul li a::before {
   background-color: black;
   transition: width 0.3s ease;
 }
-footer .footer1 .row .col-lg-7 ul li a:hover {
+.footer1 .row .col-lg-7 ul li a:hover {
   color: black;
 }
-footer .footer1 .row .col-lg-7 ul li a:hover::before {
+.footer1 .row .col-lg-7 ul li a:hover::before {
   cursor: pointer;
   width: 100%;
 }
-footer .footer2 {
+
+.footer2 {
   padding: 24px 0;
   color: #adb5bd;
   font-size: 0.875rem;
 }
-footer .footer2 .col-lg-8 {
+.footer2 .col-lg-8 {
   display: flex;
   justify-content: flex-end;
 }
-footer .footer2 .col-lg-8 p {
+.footer2 .col-lg-8 p {
   margin-right: 20px;
   transition: 0.3s;
 }
-footer .footer2 .col-lg-8 p:hover {
+.footer2 .col-lg-8 p:hover {
   cursor: pointer;
   border-bottom: 1px solid #adb5bd;
+}
+
+.phone-content {
+  display: none;
+}
+.phone-content .faqTitle {
+  width: 100%;
+  padding: 14px 0;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.phone-content .faqTitle h5 {
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  margin-bottom: 20px;
+  float: left;
+}
+.phone-content .faqTitle i {
+  position: absolute;
+  font-size: 20px;
+  right: 12.5px;
+  top: 17px;
+  transform: rotate(0deg);
+  transition: 0.1s;
+  margin-bottom: 8px;
+}
+.phone-content .faqTitle .upDown {
+  right: 11px;
+  transform: rotateZ(90deg);
+}
+@media screen and (max-width: 821px) {
+  .phone-content .faqTitle {
+    font-size: 11px;
+  }
+}
+.phone-content .faqTitle i.active {
+  transform: rotate(180deg);
+}
+.phone-content .faqInfo {
+  color: #787878;
+  margin-bottom: 40px;
+}
+.phone-content .faqInfo a {
+  color: #787878;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.phone-content .faqInfo a:hover {
+  color: #eb4d4b;
+}
+.phone-content .faqInfo ul {
+  padding-left: 0;
+}
+.phone-content .faqInfo ul li {
+  list-style: none;
+}
+
+@media screen and (max-width: 992px) {
+  .footer2 {
+    text-align: center;
+  }
+  .footer2 .col-lg-8 {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  .footer1 .col-lg-5 {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .footer1 .col-lg-5 .form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer1 .phone-content {
+    display: inline-block;
+  }
+  .footer1 .baseFoot {
+    display: none !important;
+  }
+}
+@media (max-width: 529px) {
+  .footer2 .col-lg-8 {
+    font-size: 11px !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .footer2 .phone-content {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=footer.css.map */

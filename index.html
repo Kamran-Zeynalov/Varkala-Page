@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+ 
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
@@ -70,15 +70,20 @@
                             <li class="myList">Pages <i class="fa-solid fa-angle-down"></i></li>
                             <li class="myList">Docs <i class="fa-solid fa-angle-down"></i></li>
                         </ul>
-                        <ul class="home-list">
-                            <li>Home 1 - Fashion</li>
-                            <li>Home 2 - Fashion</li>
-                            <li>Home 3 - Design <span> New</span></li>
-                            <li>Home 4 - Design <span> New</span></li>
-                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-5 col-4">
+                <div class="otherDiv col-4">
+                    <div class="input-basket">
+                        <div class="myList person-basket">
+                            <i class="person bi bi-person" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#static"></i>
+                            <i class="bi bi-heart"></i> <span class="wishlist">3</span>
+                            <i class="myList bi bi-basket" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"></i> <span class="baskett">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="baseDiv col-lg-5 col-4">
                     <div class="input-basket">
                         <div class="search">
                             <input type="text" name="search" id="search" placeholder="Search">
@@ -90,14 +95,116 @@
                             <i class="bi bi-heart"></i> <span class="wishlist">3</span>
                             <i class="myList bi bi-basket" type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop"></i> <span class="baskett">0</span>
-                            <i class="myList bi bi-list" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBack"></i>
+                            <i class="myList bi bi-list baseList" type="button" class="btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target="#staticBack"></i>
+                            <i class="phoneList myList bi bi-list"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="responsiveList">
+        <div class="lists">
+            <ul>
+                <li class="myLi active">
+                    Home <i class="fa-solid fa-angle-down"></i>
+                    <ul>
+                        <li>
+                            <div id="homeDro" class="homeDro">
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+                                <p>Home 4 - Design <span> New</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="myLi">Shop <i class="fa-solid fa-angle-down"></i>
+                    <ul>
+                        <li class="shoppp">
+                            <div id="shopDow" class="homeDro">
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+                                <p>Home 4 - Design <span> New</span></p>
+                            </div>
+                            <div id="shopDow" class="homeDro">
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+                                <p>Home 4 - Design <span> New</span></p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li class="myLi">Icons <i class="fa-solid fa-angle-down"></i>
+                    <ul>
+                        <li class="shoppp">
+                            <div id="shopDow" class="homeDro">
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+                                <p>Home 4 - Design <span> New</span></p>
+                            </div>
+                            <div id="shopDow" class="homeDro">
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+                                <p>Home 4 - Design <span> New</span></p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="myLi">Pages <i class="fa-solid fa-angle-down"></i>
+                    <ul>
+                        <li class="shoppp">
+                            <div id="shopDow" class="homeDro">
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+                                <p>Home 4 - Design <span> New</span></p>
+                            </div>
+                            <div id="shopDow" class="homeDro">
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+                                <p>Home 4 - Design <span> New</span></p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="myLi">Docs <i class="fa-solid fa-angle-down"></i>
+                    <ul>
+                        <li class="shoppp">
+                            <div id="shopDow" class="homeDro">
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+                                <p>Home 4 - Design <span> New</span></p>
+                            </div>
+                            <div id="shopDow" class="homeDro">
+                                <p>Home 1 - Fashion</p>
+                                <p>Home 2 - Fashion</p>
+                                <p><a href="./index.html">Home 3 - Design <span> New</span></a></p>
+                                <p>Home 4 - Design <span> New</span></p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="Search">
+            <i class="bi bi-search"></i>
+        </div>
+    </div>
 
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -108,7 +215,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                   
+
 
                     </div>
                     <div class="modal-footer">
@@ -127,7 +234,7 @@
     </div>
 
     <div class="modal fade" id="staticBack" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        aria-hidden="true">
         <section id="SideBasket">
             <div class="modal-dialog m-0 p-0">
                 <div class="modal-content parent">
@@ -164,6 +271,8 @@
                             out of an
                             illustrated magazine and housed in a nice, gilded frame.</p>
                     </div>
+
+
 
                 </div>
             </div>
@@ -422,6 +531,7 @@
         </section>
     </div>
 
+
     <section id="dropDown">
         <div id="homeDrop" class="homeDrop animate__animated">
             <p>Home 1 - Fashion</p>
@@ -642,7 +752,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-6 m-0 p-0">
                                     <div class="title-text-button">
                                         <div class="title">
                                             <h3>Time is Almost up</h3>
@@ -914,8 +1024,8 @@
                             </div>
                         </div>
 
-                        <div data-id="1" class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                            data-aos-delay="500" data-aos-once="true">
+                        <div data-id="1" class="myitem col-md-3 col-6" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/chair.jpg" alt="Product">
@@ -947,8 +1057,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-id="2" class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                            data-aos-delay="500" data-aos-once="true">
+                        <div data-id="2" class="myitem col-md-3 col-6" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/book.jpg" alt="Product">
@@ -960,7 +1070,8 @@
                                         <div class="detail">
                                             <i class="bi bi-heart"></i>
                                             <i class="bi bi-arrows-fullscreen" type="button" class="btn btn-primary"
-                                            data-bs-toggle="modal" data-bs-target="#stat"></i>                                        </div>
+                                                data-bs-toggle="modal" data-bs-target="#stat"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="title">
@@ -979,8 +1090,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-id="3" class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                            data-aos-delay="500" data-aos-once="true">
+                        <div data-id="3" class="myitem col-md-3 col-6" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/chair2.jpg" alt="Product">
@@ -992,7 +1103,8 @@
                                         <div class="detail">
                                             <i class="bi bi-heart"></i>
                                             <i class="bi bi-arrows-fullscreen" type="button" class="btn btn-primary"
-                                            data-bs-toggle="modal" data-bs-target="#stat"></i>                                        </div>
+                                                data-bs-toggle="modal" data-bs-target="#stat"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="title">
@@ -1011,8 +1123,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-id="4" class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                            data-aos-delay="500" data-aos-once="true">
+                        <div data-id="4" class="myitem col-md-3 col-6" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/chair3.jpg" alt="Product">
@@ -1024,7 +1136,8 @@
                                         <div class="detail">
                                             <i class="bi bi-heart"></i>
                                             <i class="bi bi-arrows-fullscreen" type="button" class="btn btn-primary"
-                                            data-bs-toggle="modal" data-bs-target="#stat"></i>                                        </div>
+                                                data-bs-toggle="modal" data-bs-target="#stat"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="title">
@@ -1043,8 +1156,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-id="5" class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                            data-aos-delay="500" data-aos-once="true">
+                        <div data-id="5" class="myitem col-md-3 col-6" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/clock.jpg" alt="Product">
@@ -1056,7 +1169,8 @@
                                         <div class="detail">
                                             <i class="bi bi-heart"></i>
                                             <i class="bi bi-arrows-fullscreen" type="button" class="btn btn-primary"
-                                            data-bs-toggle="modal" data-bs-target="#stat"></i>                                        </div>
+                                                data-bs-toggle="modal" data-bs-target="#stat"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="title">
@@ -1075,8 +1189,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-id="6" class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                            data-aos-delay="500" data-aos-once="true">
+                        <div data-id="6" class="myitem col-md-3 col-6" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/clock3.jpg" alt="Product">
@@ -1088,7 +1202,8 @@
                                         <div class="detail">
                                             <i class="bi bi-heart"></i>
                                             <i class="bi bi-arrows-fullscreen" type="button" class="btn btn-primary"
-                                            data-bs-toggle="modal" data-bs-target="#stat"></i>                                        </div>
+                                                data-bs-toggle="modal" data-bs-target="#stat"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="title">
@@ -1107,8 +1222,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-id="7" class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                            data-aos-delay="500" data-aos-once="true">
+                        <div data-id="7" class="myitem col-md-3 col-6" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/box.jpg" alt="Product">
@@ -1120,7 +1235,8 @@
                                         <div class="detail">
                                             <i class="bi bi-heart"></i>
                                             <i class="bi bi-arrows-fullscreen" type="button" class="btn btn-primary"
-                                            data-bs-toggle="modal" data-bs-target="#stat"></i>                                        </div>
+                                                data-bs-toggle="modal" data-bs-target="#stat"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="title">
@@ -1139,8 +1255,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-id="8" class="myitem col-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-                            data-aos-delay="500" data-aos-once="true">
+                        <div data-id="8" class="myitem col-md-3 col-6" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
                             <div class="image-title-price">
                                 <div class="image">
                                     <img src="./assets/images/box2.jpg" alt="Product">
@@ -1152,7 +1268,8 @@
                                         <div class="detail">
                                             <i class="bi bi-heart"></i>
                                             <i class="bi bi-arrows-fullscreen" type="button" class="btn btn-primary"
-                                            data-bs-toggle="modal" data-bs-target="#stat"></i>                                        </div>
+                                                data-bs-toggle="modal" data-bs-target="#stat"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="title">
@@ -1201,113 +1318,169 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <i class="fa fa-truck" aria-hidden="true"></i>
-                        <div class="content">
-                            <h6>Free shipping & return</h6>
-                            <p>Free Shipping over $300</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <i class="bi bi-currency-exchange"></i>
-                        <div class="content">
-                            <h6>Money back guarantee</h6>
-                            <p>30 Days Money Back Guarantee</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <i class="bi bi-coin"></i>
-                        <div class="content">
-                            <h6>Best prices</h6>
-                            <p>Always the best prices</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <i class="bi bi-person"></i>
-                        <div class="content">
-                            <h6>020-800-456-747</h6>
-                            <p>24/7 Available Support</p>
-                        </div>
-                    </div>
-                </div>
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <div class="content">
+              <h6>Free shipping & return</h6>
+              <p>Free Shipping over $300</p>
             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <i class="bi bi-currency-exchange"></i>
+            <div class="content">
+              <h6>Money back guarantee</h6>
+              <p>30 Days Money Back Guarantee</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <i class="bi bi-coin"></i>
+            <div class="content">
+              <h6>Best prices</h6>
+              <p>Always the best prices</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <i class="bi bi-person"></i>
+            <div class="content">
+              <h6>020-800-456-747</h6>
+              <p>24/7 Available Support</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="footer1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <h6>Be in touch</h6>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            <br>At itaque temporibus.
-                        </p>
-                        <form action="">
-                            <input type="text" placeholder="Your Email address">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </form>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="col-lg-4">
-                            <h6>Shop</h6>
-                            <ul class="list">
-                                <li class="list-item"> <a>For women</a></li>
-                                <li class="list-item"><a> For men</a></li>
-                                <li class="list-item"><a>Stores</a></li>
-                                <li class="list-item"><a>Our Blog</a></li>
-                                <li class="list-item"><a>Shop</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <h6>Company</h6>
-                            <ul class="list">
-                                <li class="list-item"><a>Login</a></li>
-                                <li class="list-item"><a>Register</a></li>
-                                <li class="list-item"><a>Wishlist</a></li>
-                                <li class="list-item"><a>Our product</a></li>
-                                <li class="list-item"><a>Checkouts</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <h6>Your account</h6>
-                            <ul class="list">
-                                <li class="list-item"><a>Login</a></li>
-                                <li class="list-item"><a>Register</a></li>
-                                <li class="list-item"><a>Wishlist</a></li>
-                                <li class="list-item"><a>Our product</a></li>
-                                <li class="list-item"><a>Checkouts</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <div class="footer1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h6>Be in touch</h6>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <br>At itaque temporibus.
+            </p>
+            <div class="form">
+              <form action="">
+                <input type="text" placeholder="Your Email address">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </form>
             </div>
-        </div>
 
-        <div class="footer2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <p> © 2020 Your company. All rights reserved. </p>
-                    </div>
-                    <div class="col-lg-8">
-                        <p>Terms & Conditions</p>
-                        <p>Privacy & cookies</p>
-                        <p>Accessibility</p>
-                        <p>Customer Data Promise</p>
-                    </div>
-                </div>
+          </div>
+          <div class="baseFoot col-lg-7">
+            <div class="col-lg-4">
+                <h6>Shop</h6>
+                <ul class="list">
+                    <li class="list-item"> <a>For women</a></li>
+                    <li class="list-item"><a> For men</a></li>
+                    <li class="list-item"><a>Stores</a></li>
+                    <li class="list-item"><a>Our Blog</a></li>
+                    <li class="list-item"><a>Shop</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h6>Company</h6>
+                <ul class="list">
+                    <li class="list-item"><a>Login</a></li>
+                    <li class="list-item"><a>Register</a></li>
+                    <li class="list-item"><a>Wishlist</a></li>
+                    <li class="list-item"><a>Our product</a></li>
+                    <li class="list-item"><a>Checkouts</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h6>Your account</h6>
+                <ul class="list">
+                    <li class="list-item"><a>Login</a></li>
+                    <li class="list-item"><a>Register</a></li>
+                    <li class="list-item"><a>Wishlist</a></li>
+                    <li class="list-item"><a>Our product</a></li>
+                    <li class="list-item"><a>Checkouts</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+          <div class="phone-content">
+            <div class="title-info">
+              <div class="faqTitle">
+                <h5>Blog</h5>
+                <i class="upDown fa-solid fa-minus"></i>
+                <i class="rightLeft fa-solid fa-minus"></i>
+              </div>
+              <div class="faqInfo" style="display: none;">
+                <div>
+                  <ul>
+                    <li>For Women</li>
+                    <li>For Men</li>
+                    <li>Stores</li>
+                    <li>Our blog</li>
+                    <li>Shop</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faqTitle">
+                <h5>Company</h5>
+                <i class="upDown fa-solid fa-minus"></i>
+                <i class="rightLeft fa-solid fa-minus"></i>
+              </div>
+              <div class="faqInfo" style="display: none;">
+                <div>
+                  <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Wishlist</li>
+                    <li>Our Products</li>
+                    <li>Checkouts</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faqTitle">
+                <h5>Your account</h5>
+                <i class="upDown fa-solid fa-minus"></i>
+                <i class="rightLeft fa-solid fa-minus"></i>
+              </div>
+              <div class="faqInfo" style="display: none;">
+                <div>
+                  <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Wishlist</li>
+                    <li>Our Products</li>
+                    <li>Checkouts</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p> © 2020 Your company. All rights reserved. </p>
+          </div>
+          <div class="col-lg-8">
+            <p>Terms & Conditions</p>
+            <p>Privacy & cookies</p>
+            <p>Accessibility</p>
+            <p>Customer Data Promise</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
