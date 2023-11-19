@@ -7,6 +7,14 @@ $(document).ready(function () {
       $(".myLi").not(this).find("li div").slideUp();
       $(this).find("li div").slideToggle();
   });
+
+  $(".dropbtn").click(function() {
+    var content = $(this).next(".dropdown-content");
+    
+    $(".dropdown-content").not(content).slideUp();
+    content.slideToggle();
+});
+
 });
 
 $(".faqTitle").click(function () {

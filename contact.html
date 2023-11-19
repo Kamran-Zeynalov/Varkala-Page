@@ -94,13 +94,12 @@
                         <input type="text" name="search" id="search" placeholder="Search">
                         <i class="bi bi-search"></i>
                     </div>
-                    <div class="person-basket">
+                    <div class="myList person-basket">
                         <i class="person bi bi-person" type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#static"></i>
                         <i class="bi bi-heart"></i> <span class="wishlist">3</span>
                         <i class="myList bi bi-basket" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"></i> <span class="baskett" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">0</span>
+                            data-bs-target="#staticBackdrop"></i> <span class="baskett">0</span>
                         <i class="myList bi bi-list baseList" type="button" class="btn btn-primary"
                             data-bs-toggle="modal" data-bs-target="#staticBack"></i>
                         <i class="phoneList myList bi bi-list"></i>
@@ -723,28 +722,28 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <i class="fa fa-truck" aria-hidden="true"></i>
             <div class="content">
               <h6>Free shipping & return</h6>
               <p>Free Shipping over $300</p>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <i class="bi bi-currency-exchange"></i>
             <div class="content">
               <h6>Money back guarantee</h6>
               <p>30 Days Money Back Guarantee</p>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <i class="bi bi-coin"></i>
             <div class="content">
               <h6>Best prices</h6>
               <p>Always the best prices</p>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <i class="bi bi-person"></i>
             <div class="content">
               <h6>020-800-456-747</h6>
@@ -763,41 +762,96 @@
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               <br>At itaque temporibus.
             </p>
-            <form action="">
-              <input type="text" placeholder="Your Email address">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </form>
+            <div class="form">
+              <form action="">
+                <input type="text" placeholder="Your Email address">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </form>
+            </div>
+
           </div>
-          <div class="col-lg-7">
+          <div class="baseFoot col-lg-7">
             <div class="col-lg-4">
-              <h6>Shop</h6>
-              <ul class="list">
-                <li class="list-item"> <a>For women</a></li>
-                <li class="list-item"><a> For men</a></li>
-                <li class="list-item"><a>Stores</a></li>
-                <li class="list-item"><a>Our Blog</a></li>
-                <li class="list-item"><a>Shop</a></li>
-              </ul>
+                <h6>Shop</h6>
+                <ul class="list">
+                    <li class="list-item"> <a>For women</a></li>
+                    <li class="list-item"><a> For men</a></li>
+                    <li class="list-item"><a>Stores</a></li>
+                    <li class="list-item"><a>Our Blog</a></li>
+                    <li class="list-item"><a>Shop</a></li>
+                </ul>
             </div>
             <div class="col-lg-4">
-              <h6>Company</h6>
-              <ul class="list">
-                <li class="list-item"><a>Login</a></li>
-                <li class="list-item"><a>Register</a></li>
-                <li class="list-item"><a>Wishlist</a></li>
-                <li class="list-item"><a>Our product</a></li>
-                <li class="list-item"><a>Checkouts</a></li>
-              </ul>
+                <h6>Company</h6>
+                <ul class="list">
+                    <li class="list-item"><a>Login</a></li>
+                    <li class="list-item"><a>Register</a></li>
+                    <li class="list-item"><a>Wishlist</a></li>
+                    <li class="list-item"><a>Our product</a></li>
+                    <li class="list-item"><a>Checkouts</a></li>
+                </ul>
             </div>
             <div class="col-lg-4">
-              <h6>Your account</h6>
-              <ul class="list">
-                <li class="list-item"><a>Login</a></li>
-                <li class="list-item"><a>Register</a></li>
-                <li class="list-item"><a>Wishlist</a></li>
-                <li class="list-item"><a>Our product</a></li>
-                <li class="list-item"><a>Checkouts</a></li>
-              </ul>
+                <h6>Your account</h6>
+                <ul class="list">
+                    <li class="list-item"><a>Login</a></li>
+                    <li class="list-item"><a>Register</a></li>
+                    <li class="list-item"><a>Wishlist</a></li>
+                    <li class="list-item"><a>Our product</a></li>
+                    <li class="list-item"><a>Checkouts</a></li>
+                </ul>
+            </div>
+        </div>
+          <div class="phone-content">
+            <div class="title-info">
+              <div class="faqTitle">
+                <h5>Blog</h5>
+                <i class="upDown fa-solid fa-minus"></i>
+                <i class="rightLeft fa-solid fa-minus"></i>
+              </div>
+              <div class="faqInfo" style="display: none;">
+                <div>
+                  <ul>
+                    <li>For Women</li>
+                    <li>For Men</li>
+                    <li>Stores</li>
+                    <li>Our blog</li>
+                    <li>Shop</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faqTitle">
+                <h5>Company</h5>
+                <i class="upDown fa-solid fa-minus"></i>
+                <i class="rightLeft fa-solid fa-minus"></i>
+              </div>
+              <div class="faqInfo" style="display: none;">
+                <div>
+                  <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Wishlist</li>
+                    <li>Our Products</li>
+                    <li>Checkouts</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faqTitle">
+                <h5>Your account</h5>
+                <i class="upDown fa-solid fa-minus"></i>
+                <i class="rightLeft fa-solid fa-minus"></i>
+              </div>
+              <div class="faqInfo" style="display: none;">
+                <div>
+                  <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Wishlist</li>
+                    <li>Our Products</li>
+                    <li>Checkouts</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

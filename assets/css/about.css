@@ -36,6 +36,12 @@
   color: #868e96;
   line-height: 1.6;
 }
+@media screen and (max-width: 1209px) {
+  #AboutUs .line,
+  #History .line {
+    display: none;
+  }
+}
 
 #History {
   padding-top: 1.5rem;
@@ -69,10 +75,16 @@
   font-weight: 400;
   line-height: 1.6;
 }
+@media screen and (max-width: 575px) {
+  #History .ml-6 {
+    margin-left: 0;
+  }
+}
 
 #Milestones {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background: #f8f9fa;
-  padding: 40px 0;
 }
 #Milestones .container {
   margin-top: 6rem;
@@ -88,6 +100,7 @@
   font-size: 1.25rem;
   font-weight: bold;
   color: #868e96;
+  margin-bottom: 3rem;
 }
 #Milestones .container .col-lg-6 {
   margin-left: auto;
@@ -138,6 +151,7 @@
 }
 
 #Team {
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 #Team .line {
@@ -190,6 +204,11 @@
   font-size: 0.875rem;
   font-weight: bold;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 1209px) {
+  #Team .line {
+    display: none;
+  }
 }
 
 #Brands {
@@ -268,4 +287,9 @@
   color: #868e96;
   font-size: 0.875rem;
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 995px) {
+  #Choice .ml {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=about.css.map */
